@@ -1,0 +1,17 @@
+.button {
+  font-weight: 700;
+  line-height: 100%;
+  padding: 14px 40px;
+  border: none;
+
+  &__transparent {
+    background: none;
+    color: #FF5656;
+  }
+
+  &__main {
+    color: #FFFFFF;
+    background: #FF274F;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  padding: 20px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    &_link {
+      font-weight: 500;
+      line-height: 100%;
+      color: #555555;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+}
