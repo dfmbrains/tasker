@@ -1,0 +1,70 @@
+.aboutMission {
+  padding: 0 0 80px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    margin: 0 0 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #555555;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    button {
+      font-weight: 500;
+      font-size: 18px;
+      color: #A3A3A3;
+      width: 180px;
+      padding: 15px 0;
+      border-radius: 50px;
+      border: none;
+      background: none;
+    }
+
+    .active {
+      color: #FFFFFF;
+      background: #2B96F1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__texts {
+    width: 67%;
+
+    &_title {
+      font-weight: 500;
+      font-size: 28px;
+      color: #555555;
+    }
+
+    &_description {
+      color: #555555;
+
+      &:nth-child(2) {
+        margin: 25px 0 18px;
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@ const Header = () => {
                             <Link className="header__nav_link" to={"/"}>Преимущества</Link>
                             <Link className="header__nav_link" to={"/"}>Заработок в интернете</Link>
                             <Link className="header__nav_link" to={"/"}>Партнерская программа</Link>
-                            <Link className="header__nav_link" to={"/"}>О нас</Link>
+                            <Link className="header__nav_link" to={"/about"}>О нас</Link>
                         </nav>
                         <div className="header__buttons">
                             <Link to={"/login"}>

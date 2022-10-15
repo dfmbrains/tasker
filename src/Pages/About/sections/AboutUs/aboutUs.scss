@@ -1,0 +1,40 @@
+.aboutUs {
+  padding: 30px 0 10px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 65%;
+
+    p:last-child {
+      margin: 20px 0 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #555555;
+    margin: 0 0 40px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #555555;
+  }
+
+  &__img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 90%;
+    }
+  }
+}

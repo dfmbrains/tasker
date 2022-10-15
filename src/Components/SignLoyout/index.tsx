@@ -1,11 +1,11 @@
 import React from 'react';
 import './signLayout.scss';
 import {NavLink, Outlet} from "react-router-dom";
-import LayoutImg from './img/signLayoutImg.png';
+import LayoutImg from '../../Assets/img/metaImg.png';
 
 const SignLayout = () => {
     return (
-        <section className="signLayout">
+        <main className="signLayout">
             <div className="container">
                 <div className="signLayout__content">
                     <nav className="signLayout__nav">
@@ -18,7 +18,7 @@ const SignLayout = () => {
                     <img src={LayoutImg} alt=""/>
                 </div>
             </div>
-        </section>
+        </main>
     );
 };
 

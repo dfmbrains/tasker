@@ -1,9 +1,9 @@
 .signLayout {
-  padding: 30px 0 0;
+  padding: 50px 0 0;
 
   .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -17,6 +17,7 @@
   &__nav {
     display: flex;
     align-items: center;
+    margin: 0 0 30px;
 
     a {
       width: 50%;
@@ -43,5 +44,83 @@
     img {
       width: 70%;
     }
+  }
+}
+.sign {
+  &__title {
+    margin: 0 auto 30px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #AFAFAF;
+    width: 68%;
+  }
+
+  &__form {
+    padding: 0 25px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    background: #FFFFFF;
+    border: 1px solid #CCD9EC;
+    border-radius: 50px;
+    padding: 15px 20px;
+
+    svg {
+      width: 20px;
+    }
+
+    input {
+      border: none;
+      background: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 135%;
+      color: #4C4866;
+      width: 100%;
+      outline: none;
+    }
+
+    &:nth-child(2) {
+      margin: 20px 0;
+    }
+
+    &_last {
+      margin: 20px 0 40px !important;
+    }
+  }
+
+  &__how {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #4C4866;
+  }
+
+  &__checkboxes {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-weight: 500;
+      color: #4C4866;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #AFAFAF;
+    display: block;
+    margin: 30px 0 0;
   }
 }
