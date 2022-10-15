@@ -18,7 +18,7 @@ const Header = () => {
         <header ref={headerRef} className="header">
             <div className="container">
                 <Link to={"/"}>
-                    <Logo/>
+                    <Logo props={1}/>
                 </Link>
                 {location.pathname.includes("login") || location.pathname.includes("signup")
                     ? ''
@@ -34,13 +34,14 @@ const Header = () => {
                             <Link to={"/login"}>
                                 <Button text={"Войти"} type={1}/>
                             </Link>
-                            <Link to={"/signup"}>
+                            <Link to={"signup"}>
                                 <Button text={"Регистрация"} type={2}/>
                             </Link>
                         </div>
                     </>
 
                 }
+
             </div>
         </header>
     );
