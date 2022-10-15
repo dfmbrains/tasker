@@ -1,21 +1,25 @@
 .HomeBusiness {
+  margin: 50px 0 0;
   &__main {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     &_left {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 50%;
       row-gap: 30px;
-      .button{
+
+      .button {
         width: auto;
         padding: 25px 70px;
       }
 
       h2 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 38px;
         color: #333333;
       }
 
@@ -23,6 +27,16 @@
         font-weight: 500;
         font-size: 24px;
         color: #333333;
+      }
+    }
+
+    &_right {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 40%;
       }
     }
   }
