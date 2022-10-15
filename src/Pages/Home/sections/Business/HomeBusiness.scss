@@ -1,0 +1,29 @@
+.HomeBusiness {
+  &__main {
+    display: flex;
+    align-items: center;
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 30px;
+      .button{
+        width: auto;
+        padding: 25px 70px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #333333;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 24px;
+        color: #333333;
+      }
+    }
+  }
+}

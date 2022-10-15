@@ -15,4 +15,13 @@
     background: #FF274F;
     border-radius: 50px;
   }
+
+  &__big{
+    padding: 18px 0 20px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: linear-gradient(185.79deg, #FFFFFF -86.28%, #FF274F -86.25%, #FF5C7B -86.23%, rgba(255, 39, 79, 0.61) 96.7%), #FF274F;
+    box-shadow: 0 2.88998px 20.2298px rgba(93, 126, 189, 0.12), inset 0px -4px 4px rgba(117, 0, 0, 0.53);
+    border-radius: 72px;
+  }
 }

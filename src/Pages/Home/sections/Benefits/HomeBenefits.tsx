@@ -1,10 +1,10 @@
 import React from 'react';
 import './HomeBenefits.scss';
-import RocketIcon from '../img/Rocket.png';
-import User from '../img/User.png';
-import Statistic from '../img/Statistic.png';
-import Bell from '../img/Bell.png';
-import Compas from '../img/Compas.png';
+import RocketIcon from './img/Rocket.png';
+import User from './img/User.png';
+import Statistic from './img/Statistic.png';
+import Bell from './img/Bell.png';
+import Compas from './img/Compas.png';
 import HomeBenefitCard from "../../../../Components/HomeBenefitCard/HomeBenefitCard";
 
 const HomeBenefits = () => {

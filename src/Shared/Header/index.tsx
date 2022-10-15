@@ -25,8 +25,8 @@ const Header = () => {
                     <Link className="header__nav_link" to={"/"}>О нас</Link>
                 </nav>
                 <div className="header__buttons">
-                    <Button text={"Войти"} type={true}/>
-                    <Button text={"Регистрация"} type={false}/>
+                    <Button text={"Войти"} type={1}/>
+                    <Button text={"Регистрация"} type={2}/>
                 </div>
             </div>
         </header>
