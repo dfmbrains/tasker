@@ -1,6 +1,7 @@
 import React from 'react';
 import './homeIntro.scss';
 import Button from "../../../../Components/Button";
+import IntroImg from '../../../../Assets/img/homeIntro.png';
 
 const HomeIntro = () => {
     return (
@@ -18,7 +19,7 @@ const HomeIntro = () => {
                     </div>
                 </div>
                 <div className="homeIntro__img">
-
+                    <img src={IntroImg} alt=""/>
                 </div>
             </div>
         </section>

@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeIntro from "./sections/Intro";
 
 const Home = () => {
     return (
         <main>
-            Home
+            <HomeIntro/>
         </main>
     );
 };
