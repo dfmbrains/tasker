@@ -1,25 +1,115 @@
 .homeStart {
+  position: relative;
+
+  .container {
+    position: relative;
+    top: -80px;
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
   &__cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10%;
 
     &_item {
-      width: 23%;
+      width: 27%;
       background: #FFFFFF;
-      padding: 5px;
+      padding: 7px;
+      border-radius: 20px;
 
       &-content {
         border: 1px solid #FF5656;
-        border-radius: 24px;
-        padding: 50px 0;
+        border-radius: 20px;
+        padding: 30px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         img {
-          width: 120px;
-          height: 120px;
+          width: 140px;
+          height: 140px;
+        }
+
+        h5 {
+          font-weight: 700;
+          font-size: 48px;
+          color: #FF5656;
+          margin: 10px 0 15px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 21px;
+          line-height: 112.5%;
+          color: #4C4866;
+        }
+      }
+    }
+  }
+
+  &__info {
+    margin: 80px 0 0;
+
+    &_title {
+      font-weight: 700;
+      font-size: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    &_row {
+      margin: 30px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 80%;
+      row-gap: 40px;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      padding: 6px;
+      width: 49%;
+      background: #FFFFFF;
+      border-radius: 10px;
+
+      &-img {
+        width: 24.5%;
+        padding: 10px;
+        border: 1px dashed #FF2F56;
+        border-radius: 10px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-texts {
+        h5 {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 112.5%;
+          color: #555555;
+          margin: 0 0 5px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 17px;
+          color: #555555;
         }
       }
     }
