@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./Shared/Header";
-import Footer from "./Shared/Footer";
+import Footer from "./Shared/Footer/Footer";
 import {Route, Routes} from "react-router";
 import Home from "./Pages/Home";
 

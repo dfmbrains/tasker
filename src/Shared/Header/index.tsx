@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <header ref={headerRef} className="header">
             <div className="container">
-                <Logo/>
+                <Logo props={1}/>
                 <nav className="header__nav">
                     <Link className="header__nav_link" to={"/"}>С чего начать</Link>
                     <Link className="header__nav_link" to={"/"}>Преимущества</Link>
