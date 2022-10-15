@@ -18,7 +18,7 @@ const HomeIntro = () => {
                         тысячи заданий с оплатой за деньги
                     </p>
                     <div className="homeIntro__button">
-                        <Button text={"Начать сейчас"} type={false}/>
+                        <Button text={"Начать сейчас"} type={3}/>
                     </div>
                 </div>
                 <div className="homeIntro__img">
