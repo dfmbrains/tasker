@@ -1,12 +1,20 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import './header.scss'
 import Logo from "../../Components/Logo";
 import {Link} from "react-router-dom";
 import Button from "../../Components/Button";
+import {useRecoilState} from "recoil";
+import {headerHeightState} from "../../Store/States";
 
 const Header = () => {
+    const [headerHeight, setHeaderHeight] = useRecoilState(headerHeightState);
+    const headerRef: any = useRef();
+    useEffect(() => {
+        setHeaderHeight(headerRef.current.clientHeight)
+    }, []);
+
     return (
-        <header className="header">
+        <header ref={headerRef} className="header">
             <div className="container">
                 <Logo/>
                 <nav className="header__nav">
