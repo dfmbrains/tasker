@@ -1,0 +1,45 @@
+.signLayout {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 35%;
+    padding: 0 0 20px;
+    border: 1px dashed #CCD9EC;
+    border-radius: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      width: 50%;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #CCD9EC;
+      padding: 16px 0;
+    }
+
+    .active {
+      background: #3152FF;
+      box-shadow: 0 2.88998px 20.2298px rgba(93, 126, 189, 0.12);
+      border-radius: 80px;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 70%;
+    }
+  }
+}
