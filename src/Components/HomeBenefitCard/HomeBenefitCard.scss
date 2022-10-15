@@ -1,0 +1,29 @@
+.HomBenefitCard{
+  display: flex;
+  width: calc(33.333% - 20px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 33px;
+  background: #FFFFFF;
+  border: 1px dashed #FF543E;
+  border-radius: 10px;
+  img{
+    width: 121px;
+    height: 121px;
+    margin-bottom: 29px;
+  }
+  &__title{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #4C4866;
+  }
+  &__desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #4C4866;
+  }
+}
