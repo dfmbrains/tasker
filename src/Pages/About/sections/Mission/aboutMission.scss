@@ -52,8 +52,10 @@
 
   &__texts {
     width: 67%;
+    padding-left: 30px;
 
     &_title {
+      font-family: 'Cera Pro', sans-serif;
       font-weight: 500;
       font-size: 28px;
       color: #555555;
@@ -61,7 +63,11 @@
 
     &_description {
       color: #555555;
-
+      font-family: 'Cera Pro', sans-serif;
+      font-style: normal;
+      line-height: 28px;
+      font-weight: 400;
+      font-size: 16px;
       &:nth-child(2) {
         margin: 25px 0 18px;
       }

@@ -3,21 +3,32 @@ import './aboutMission.scss';
 import MissionImg from './img/missonImg.png';
 
 const AboutMission = () => {
+
     const [content, setContent] = useState(1);
+
+    const switchs = (type: number) => {
+        switch (type) {
+            case content:
+                return 'active'
+            default:
+                return ''
+        }
+    }
+
     return (
         <section className="aboutMission">
             <div className="container">
                 <div className="aboutMission__top">
                     <h2 className="aboutMission__title">Для кого мы?</h2>
                     <nav className="aboutMission__nav">
-                        <button className={`${content === 1 ? 'active' : ''}`}
-                            type={"button"} onClick={() => setContent(1)}>Пользователь
+                        <button className={`${switchs(1)}`}
+                                type={"button"} onClick={() => setContent(1)}>Пользователь
                         </button>
-                        <button className={`${content === 2 ? 'active' : ''}`}
-                            type={"button"} onClick={() => setContent(2)}>Фрилансер
+                        <button className={`${switchs(2)}`}
+                                type={"button"} onClick={() => setContent(2)}>Фрилансер
                         </button>
-                        <button className={`${content === 3 ? 'active' : ''}`}
-                            type={"button"} onClick={() => setContent(3)}>Работодатель
+                        <button className={`${switchs(3)}`}
+                                type={"button"} onClick={() => setContent(3)}>Работодатель
                         </button>
                     </nav>
                 </div>

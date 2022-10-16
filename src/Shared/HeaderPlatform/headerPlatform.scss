@@ -1,0 +1,142 @@
+.headerPlatform {
+  background: #FFFFFF;
+
+  &__filters{
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      color: #555555;
+
+    }
+  }
+
+  &__main {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_avatarBorder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 50px;
+      height: 50px;
+
+      .avatarNone {
+        width: 100%;
+        height: 100%;
+        background: #93E2E2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+
+      .img {
+        background: center/cover no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
+  }
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+
+    label {
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-left: 15px;
+        border: none;
+        outline: none;
+        background: none;
+      }
+    }
+
+    div {
+      button {
+        border: none;
+        padding: 9px 25px;
+        background: #3152FF;
+        border-radius: 8px;
+
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+
+      }
+    }
+
+
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    &_wallet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      background: #FFB800;
+      border-radius: 8px;
+      column-gap: 4px;
+
+      span {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+
+    a {
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      color: #555555;
+
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  hr {
+    border: 1px solid #D9D9D9;
+  }
+}

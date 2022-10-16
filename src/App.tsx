@@ -7,6 +7,7 @@ import SignLayout from "./Components/SignLoyout";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import HomeAbout from "./Pages/About";
+import HeaderPlatform from "./Shared/HeaderPlatform";
 
 function App() {
     const location = useLocation();
@@ -14,7 +15,11 @@ function App() {
 
     return (
         <>
-            <Header/>
+            {
+                window.location.href.includes('platform')
+                    ? <HeaderPlatform/>
+                    : <Header/>
+            }
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
                 <Route path={"/about"} element={<HomeAbout/>}/>

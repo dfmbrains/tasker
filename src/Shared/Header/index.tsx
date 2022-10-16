@@ -7,9 +7,13 @@ import {useRecoilState} from "recoil";
 import {headerHeightState} from "../../Store/States";
 
 const Header = () => {
+
     const location = useLocation();
+
     const [headerHeight, setHeaderHeight] = useRecoilState(headerHeightState);
+
     const headerRef: any = useRef();
+
     useEffect(() => {
         setHeaderHeight(headerRef.current.clientHeight)
     }, []);
@@ -39,9 +43,7 @@ const Header = () => {
                             </Link>
                         </div>
                     </>
-
                 }
-
             </div>
         </header>
     );
