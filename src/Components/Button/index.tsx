@@ -3,11 +3,12 @@ import './button.scss';
 
 interface IButton {
     text: string,
-    type: number
+    type: number,
+    children?: any
 }
 
-const ButtonTypes = (type: number)=>{
-    switch (type){
+const ButtonTypes = (type: number) => {
+    switch (type) {
         case 1:
             return 'button__transparent'
         case 2:
@@ -19,9 +20,9 @@ const ButtonTypes = (type: number)=>{
     }
 }
 
-const Button: FC<IButton> = ({text, type}) => {
+const Button: FC<IButton> = ({text, type, children}) => {
     return (
-        <button className={`button ${ButtonTypes(type)}`}>{text}</button>
+        <button className={`button ${ButtonTypes(type)}`}>{children}{text}</button>
     );
 };
 
