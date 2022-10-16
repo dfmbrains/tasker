@@ -8,6 +8,7 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import HomeAbout from "./Pages/About";
 import HeaderPlatform from "./Shared/HeaderPlatform";
+import Details from "./Pages/Details";
 
 function App() {
     const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
                     <Route path={"/login"} element={<SignIn/>}/>
                     <Route path={"/signup"} element={<SignUp/>}/>
                 </Route>
+                <Route path={"/platform/details/:id"} element={<Details/>}/>
             </Routes>
             <Footer/>
         </>
