@@ -5,15 +5,17 @@ import img4 from './Rectangle 359 (3).png';
 import img5 from './Rectangle 359 (4).png';
 import img6 from './Rectangle 359 (5).png';
 import img7 from './Rectangle 359 (6).png';
+import Avatar from './avatar.png';
 
 const serviceDataCards = [
     {
         image: img1,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 5
+        rate: 5,
+        avatar: Avatar
     },
     {
         image: img2,
@@ -21,47 +23,53 @@ const serviceDataCards = [
         to: 100000,
         user: "Maksat",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 1
+        rate: 1,
+        avatar: Avatar
     },
     {
         image: img3,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 5
+        rate: 5,
+        avatar: Avatar
     },
     {
         image: img4,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 3
+        rate: 3,
+        avatar: Avatar
     },
     {
         image: img5,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 2
+        rate: 2,
+        avatar: Avatar
     },
     {
         image: img6,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 3
+        rate: 3,
+        avatar: Avatar
     },
     {
         image: img7,
         from: 10000,
-        to: null,
+        to: 0,
         user: "Erbol",
         desc: 'Услуги мощных разработчиков Фронтендеров - почти фуллстеков, готовых написать вам сайт за короткий срок с бэком и фронтом',
-        rate: 0
+        rate: 0,
+        avatar: Avatar
     },
 ];
 export default serviceDataCards

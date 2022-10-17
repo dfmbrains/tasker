@@ -1,3 +1,8 @@
 .MarketPlace{
   padding: 50px 0;
+  &__main{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
 }
