@@ -10,13 +10,15 @@ interface IButton {
 const ButtonTypes = (type: number) => {
     switch (type) {
         case 1:
-            return 'button__transparent'
+            return 'button__transparent';
         case 2:
-            return 'button__main'
+            return 'button__main';
         case 3:
-            return 'button__big'
+            return 'button__big';
         case 4:
-            return 'button__blue'
+            return 'button__blue';
+        case 5:
+            return 'button__transparent-2';
         default:
             return ""
     }
