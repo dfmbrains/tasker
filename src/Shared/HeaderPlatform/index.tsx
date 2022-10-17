@@ -11,7 +11,9 @@ const HeaderPlatform = () => {
         <header className="headerPlatform">
             <div className="container">
                 <div className="headerPlatform__left">
-                    <Logo props={3}/>
+                    <Link to={"/app"}>
+                        <Logo props={3}/>
+                    </Link>
                     <form className="headerPlatform__search">
                         <img className="headerPlatform__search_icon" src={Search} alt=""/>
                         <label>
