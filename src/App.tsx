@@ -10,6 +10,7 @@ import HomeAbout from "./Pages/About";
 import HeaderPlatform from "./Shared/HeaderPlatform";
 import Details from "./Pages/Details";
 import Marketplace from "./Pages/Marketplace";
+import LandingLayout from "./Components/LandingLayout";
 
 function App() {
     const location = useLocation();
@@ -17,20 +18,19 @@ function App() {
 
     return (
         <>
-            {
-                window.location.href.includes('platform')
-                    ? <HeaderPlatform/>
-                    : <Header/>
-            }
             <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/about"} element={<HomeAbout/>}/>
-                <Route path={"/"} element={<SignLayout/>}>
-                    <Route path={"/login"} element={<SignIn/>}/>
-                    <Route path={"/signup"} element={<SignUp/>}/>
+                <Route path={"/"} element={<LandingLayout/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path={"/about"} element={<HomeAbout/>}/>
+                    <Route path={"/"} element={<SignLayout/>}>
+                        <Route path={"/login"} element={<SignIn/>}/>
+                        <Route path={"/signup"} element={<SignUp/>}/>
+                    </Route>
                 </Route>
-                <Route path={"platform/marketplace"} element={<Marketplace/>}/>
-                <Route path={"/platform/details/:id"} element={<Details/>}/>
+                <Route path={"/app"} element={<LandingLayout/>}>
+                    <Route path={"marketplace"} element={<Marketplace/>}/>
+                    <Route path={"marketplace/:id"} element={<Details/>}/>
+                </Route>
             </Routes>
             <Footer/>
         </>

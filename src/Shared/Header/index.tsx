@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header ref={headerRef} className="header">
             <div className="container">
-                <Link to={"/"}>
+                <Link className="header__logo" to={"/"}>
                     <Logo props={1}/>
                 </Link>
                 {location.pathname.includes("login") || location.pathname.includes("signup")
