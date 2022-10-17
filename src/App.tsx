@@ -28,8 +28,8 @@ function App() {
                     </Route>
                 </Route>
                 <Route path={"/app"} element={<LandingLayout/>}>
-                    <Route path={"marketplace"} element={<Marketplace/>}/>
-                    <Route path={"marketplace/:id"} element={<Details/>}/>
+                    <Route index element={<Marketplace/>}/>
+                    <Route path={"details/:id"} element={<Details/>}/>
                 </Route>
             </Routes>
             <Footer/>
