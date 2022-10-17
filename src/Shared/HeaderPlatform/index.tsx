@@ -7,6 +7,7 @@ import {NavLink} from "react-router-dom";
 import {useRecoilState} from "recoil";
 import {profile} from "../../Store/States";
 import Tenge from "../../Components/Tenge/Tenge";
+import Button from "../../Components/Button";
 
 const Index = () => {
 
@@ -23,7 +24,7 @@ const Index = () => {
                             <input placeholder={'Услугу, исполнителя'} type="text"/>
                         </label>
                         <div>
-                            <button type="submit">Найти</button>
+                            <Button text={"Найти"} type={4}/>
                         </div>
                     </form>
                     <nav className="headerPlatform__navbar">
