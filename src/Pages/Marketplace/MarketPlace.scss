@@ -1,5 +1,10 @@
 .MarketPlace{
   padding: 50px 0;
+  .container{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+  }
   &__main{
     display: flex;
     flex-flow: row wrap;

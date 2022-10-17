@@ -10,6 +10,7 @@ import Details from "./Pages/Details";
 import Marketplace from "./Pages/Marketplace";
 import LandingLayout from "./Components/LandingLayout";
 import AppLayout from "./Components/AppLayout";
+import Vacancies from "./Pages/Vacancies/Vacancies";
 
 function App() {
     const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
                 </Route>
                 <Route path={"/app"} element={<AppLayout/>}>
                     <Route index element={<Marketplace/>}/>
+                    <Route path={'vacancies'} element={<Vacancies/>}/>
                     <Route path={"details/:id"} element={<Details/>}/>
                 </Route>
             </Routes>
