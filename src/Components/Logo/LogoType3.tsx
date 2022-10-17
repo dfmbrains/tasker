@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogoType3 = () => {
     return (
-        <svg width="154" height="33" viewBox="0 0 154 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="120" height="28" viewBox="0 0 154 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9543 0.624V6.50743H14.5303V31.824H8.37943V6.50743H0V0.624H22.9543Z" fill="#3152FF"/>
             <path
                 d="M44.1818 31.824L42.3098 26.208H29.8743L28.0023 31.824H21.3612L32.2812 0.624H39.9029L50.8675 31.824H44.1818ZM31.8355 20.4583H40.3932L36.1143 7.71086L31.8355 20.4583Z"
