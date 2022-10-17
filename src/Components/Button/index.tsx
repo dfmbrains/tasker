@@ -15,6 +15,8 @@ const ButtonTypes = (type: number) => {
             return 'button__main'
         case 3:
             return 'button__big'
+        case 4:
+            return 'button__blue'
         default:
             return ""
     }

@@ -5,7 +5,7 @@ import Button from "../../Components/Button";
 const Details = () => {
     return (
         <main className="details">
-            <div className="contsainer">
+            <div className="container">
                 <h1 className="pageTitle">Уникальный логотип. Разработка логотипа</h1>
                 <div className="details__row">
                     <div className="details__contact">
@@ -49,7 +49,7 @@ const Details = () => {
                             </div>
                         </div>
                         <div className="details__contact_button">
-                            <Button type={1} text={"Связаться с продавцом"}>
+                            <Button type={4} text={"Связаться с продавцом"}>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_18_1573)">
