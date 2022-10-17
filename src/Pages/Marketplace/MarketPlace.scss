@@ -1,11 +1,13 @@
-.MarketPlace{
-  padding: 50px 0;
-  .container{
+.MarketPlace {
+  padding: 0 0 50px;
+
+  .container {
     display: flex;
     align-items: flex-start;
     column-gap: 15px;
   }
-  &__main{
+
+  &__main {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;

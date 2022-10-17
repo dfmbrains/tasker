@@ -1,7 +1,7 @@
 .headerPlatform {
-  padding: 20px 0;
+  padding: 20px 0 40px;
 
-  .container {
+  &__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,6 +105,44 @@
       font-size: 24px;
       line-height: 100%;
       color: #FFFFFF;
+    }
+  }
+
+  &__categories {
+    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+
+    &_item {
+      line-height: 110%;
+      text-align: center;
+      color: #555555;
+
+      &:not(:last-child) {
+        border-right: 1px solid #BFBFBF;
+        padding-right: 35px;
+      }
+
+      &:not(:first-child) {
+        padding-left: 35px;
+      }
+    }
+  }
+
+  &__history {
+    margin: 40px 0 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &_item {
+      font-weight: 400;
+      line-height: 100%;
+      color: #555555;
     }
   }
 }
