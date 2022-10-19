@@ -13,7 +13,7 @@ const MarketPlace = () => {
             <div className="container">
                 <MarketPlaceAside/>
                 <div className="MarketPlace__main">
-                    {services.map((item)=>(
+                    {services.map((item) => (
                         <ServiceCard obj={item}/>
                     ))}
                 </div>
