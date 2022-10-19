@@ -40,10 +40,6 @@ const ServiceCard: React.FC<Interface> = ({obj}) => {
                         <span>От {obj.from} тг </span>
                         : ''
                     }
-                {obj.to ?
-                    <span>до {obj.to} тг </span>
-                    : ''
-                }
             </span>
 
             <span className="ServiceCard__desc">

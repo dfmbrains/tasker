@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from "../../Components/Button";
 import {Link} from "react-router-dom";
+import {useNavigate} from "react-router";
 
 const SignIn = () => {
+    const navigate = useNavigate();
     return (
         <>
             <h2 className="sign__title">Заполните поля для того, чтобы зайти в свой аккаунт</h2>
@@ -23,7 +25,7 @@ const SignIn = () => {
                     </svg>
                     <input placeholder="Пароль" type="password"/>
                 </label>
-                <Button text={"Войти"} type={3}/>
+                <Button action={() => navigate('/app')} text={"Войти"} type={3}/>
                 <Link className="sign__link" to={"/"}>Забыли пароль ?</Link>
             </form>
         </>

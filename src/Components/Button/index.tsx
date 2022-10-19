@@ -4,7 +4,8 @@ import './button.scss';
 interface IButton {
     text: string,
     type: number,
-    children?: any
+    children?: any,
+    action?: any
 }
 
 const ButtonTypes = (type: number) => {
@@ -24,9 +25,9 @@ const ButtonTypes = (type: number) => {
     }
 }
 
-const Button: FC<IButton> = ({text, type, children}) => {
+const Button: FC<IButton> = ({text, type, children, action}) => {
     return (
-        <button className={`button ${ButtonTypes(type)}`}>{children}{text}</button>
+        <button onClick={action} className={`button ${ButtonTypes(type)}`}>{children}{text}</button>
     );
 };
 

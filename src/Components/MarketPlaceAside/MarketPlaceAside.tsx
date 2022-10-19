@@ -4,7 +4,7 @@ import './MarketAside.scss';
 const MarketPlaceAside = () => {
     return (
         <aside className="MarketAside">
-            <h2>Цена</h2>
+            <h2 className="MarketAside__price">Цена</h2>
             <label className="MarketAside__fromTo">
                 <input placeholder="От" type="number"/>
                 <span>-</span>

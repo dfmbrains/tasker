@@ -1,7 +1,9 @@
 import React from 'react';
 import Button from "../../Components/Button";
+import {useNavigate} from "react-router";
 
 const SignUp = () => {
+    const navigate = useNavigate();
     return (
         <form className="sign__form">
             <label className="sign__label">
@@ -51,7 +53,7 @@ const SignUp = () => {
                     Работодатель
                 </label>
             </div>
-            <Button text={"Войти"} type={3}/>
+            <Button action={() => navigate('/app')} text={"Зарегистрироваться"} type={3}/>
         </form>
     );
 };
