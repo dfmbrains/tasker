@@ -3,7 +3,7 @@ import Logo from "../../Components/Logo";
 import './headerPlatform.scss';
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import Search from '../../Assets/icons/search.svg';
 
 const HeaderPlatform = () => {
@@ -61,7 +61,7 @@ const HeaderPlatform = () => {
                             </svg>
                         </button>
                         <div className="headerPlatform__profile">
-                            <div className="headerPlatform__profile_ava">S</div>
+                            <NavLink to={'/myProfile'} className="headerPlatform__profile_ava">S</NavLink>
                             <button className="headerPlatform__more">
                                 <svg width="10" height="8" viewBox="0 0 14 8" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@ const HeaderPlatform = () => {
                     ))}
                 </div>
                 {
-                    !window.location.href.includes('chat')
+                    !window.location.href.includes('chat') && !window.location.href.includes('myProfile')
                         ? <div className="headerPlatform__history">
                             <Link to={"/"} className="headerPlatform__history_item">Дизайн</Link>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

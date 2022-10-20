@@ -2,61 +2,63 @@ import Djamal from "../../Assets/img/Djamal.png";
 import DjamalJyrnyi from "../../Assets/img/DjamalJyrnyi.webp";
 import Djamal2 from "../../Assets/img/djamal2.jpg";
 import Djamal3 from "../../Assets/img/djamal3.jpg";
+import DjamalKras from "../../Assets/img/MegaKrasivyiDjamal.webp";
 import markDelievered from "../../Assets/icons/markDelivered.svg";
 import markReaded from "../../Assets/icons/markReaded.svg";
 import React from "react";
 
 const dataUsers = [
     {
-        name: 'Djamal Djamalov',
+        name: 'Джамал Джамалов',
         img: Djamal,
-        lastMes: 'Вы успеваете?',
+        lastMes: 'Может встретимся?',
         readed: 2,
         date: '26.07.22',
     },
     {
-        name: 'Djamal Jyrnyi',
+        name: 'Джамал Жирный',
         img: DjamalJyrnyi,
-        lastMes: 'Вы успеваете?',
+        lastMes: 'Люблю!',
         readed: 1,
         date: '26.07.22',
     },
     {
-        name: 'Djamal 2',
+        name: 'Джамал 2',
         img: Djamal2,
-        lastMes: 'Вы успеваете?',
+        lastMes: 'Скоро буду',
         readed: 1,
         date: '26.07.22',
     },
     {
-        name: 'Djamal 3',
+        name: 'Джамал 3',
         img: Djamal3,
-        lastMes: 'Вы успеваете?',
+        lastMes: 'Куда мне подъезжать?',
         readed: 0,
         date: '26.07.22',
     },
     {
-        name: 'Djamal 4',
-        lastMes: 'Вы успеваете?',
+        name: 'Джамал 4',
+        lastMes: 'Дай номер телефона',
         readed: 1,
         date: '26.07.22',
     },
     {
-        name: 'Djamal 4',
-        lastMes: 'Вы успеваете?',
+        name: 'Джамал 5',
+        lastMes: 'Ты где?',
         readed: 2,
         date: '26.07.22',
     },
     {
-        name: 'Shamal 4',
-        lastMes: 'Вы успеваете?',
+        name: 'Джамал 6',
+        lastMes: 'Как дела?',
         readed: 1,
         date: '26.07.22',
     },
     {
-        name: 'Djamal 4',
-        lastMes: 'Вы успеваете?',
+        name: 'Мегакрасивый Джамал',
+        lastMes: 'Давай встретимся?',
         readed: 1,
+        img: DjamalKras,
         date: '26.07.22',
     }
 ]

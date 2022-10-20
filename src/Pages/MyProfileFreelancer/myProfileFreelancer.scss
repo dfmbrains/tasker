@@ -1,0 +1,22 @@
+.myProfileFreelancer {
+  background: #FFFFFF;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__profile {
+    display: flex;
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

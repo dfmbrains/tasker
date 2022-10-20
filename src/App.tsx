@@ -13,6 +13,7 @@ import AppLayout from "./Components/AppLayout";
 import Vacancies from "./Pages/Vacancies/Vacancies";
 import Offers from "./Pages/Offers";
 import Chat from "./Pages/Chat/Chat";
+import MyProfile from "./Pages/MyProfile/MyProfile";
 
 function App() {
     const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
                     <Route path={'/offers'} element={<Offers/>}/>
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>
+                    <Route path={'/myProfile'} element={<MyProfile/>}/>
                 </Route>
             </Routes>
             <Footer/>
