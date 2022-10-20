@@ -42,16 +42,18 @@ const ChatDirect = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="chatDirect__messages">
+                        <div className="chatDirect__scroll">
+                            <div className="chatDirect__messages">
                             <span className="yourMessage">
                                 Меня зовут Нурлан, опыт работы 2 года в компании “CodePin”.
                                 Отличное знание HTML, CSS и JavaScript
                                 <p className="date">12:05</p>
                             </span>
-                            <span className="anotherMessage">
+                                <span className="anotherMessage">
                                 Здравствуйте
                                 <p className="date">12:05</p>
                             </span>
+                            </div>
                         </div>
                         <form onSubmit={(e)=> sendMessage(e)} className="chatDirect__inputLabel">
                             <img src={inputFile} alt=""/>

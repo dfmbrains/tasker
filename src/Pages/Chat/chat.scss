@@ -1,11 +1,14 @@
 .chat {
   padding: 0 0 15px 0;
   background: #FFFFFF;
-  height: calc(100vh - 160px - 145px);
+  height: calc(100vh - 160px);
   display: flex;
   border-collapse: collapse;
   &__main{
     display: flex;
+    height: 100%;
+  }
+  .container {
     height: 100%;
   }
 }
