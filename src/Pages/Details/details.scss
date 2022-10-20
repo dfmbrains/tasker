@@ -67,6 +67,10 @@
 
   &__button {
     padding: 0 17px;
+
+    button {
+      flex-direction: row-reverse;
+    }
   }
 
   &__description {
@@ -101,7 +105,6 @@
       font-size: 28px;
       line-height: 100%;
       text-align: center;
-      color: #FFB800;
       display: flex;
       align-items: center;
       column-gap: 10px;
@@ -112,6 +115,16 @@
     div {
       padding: 10px 17px;
       border-top: 1px solid #CCD9EC;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      svg {
+        margin: 2px 0 0;
+        width: 14px;
+        height: 14px;
+      }
+
       &:last-child {
         padding: 17px 17px 0;
       }

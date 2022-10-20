@@ -12,6 +12,9 @@ interface IVacancyCard {
 
 const VacancyCard: FC<IVacancyCard> = ({offer, status, id}) => {
     const navigate = useNavigate()
+    const navigateToVacancy = () => {
+        navigate('1')
+    }
     return (
         <div className="card vacancyCard">
             <CardHeader/>
@@ -43,7 +46,7 @@ const VacancyCard: FC<IVacancyCard> = ({offer, status, id}) => {
                         ? <button onClick={() => navigate(`/chat/${id}`)}
                                   className={`vacancyCard__button vacancyCard__button-${status}`}>Перейти в чат
                         </button>
-                        : <Button text={"Подробнее"} type={6}/>
+                        : <Button action={navigateToVacancy} text={"Подробнее"} type={6}/>
                     }
                 </div>
             </div>

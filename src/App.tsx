@@ -36,8 +36,9 @@ function App() {
                 </Route>
                 <Route path={"/"} element={<AppLayout/>}>
                     <Route path={'/category/:category'} element={<Marketplace/>}/>
-                    <Route path={"/category/:category/:id"} element={<Details/>}/>
-                    <Route path={'/projects'} element={<Vacancies/>}/>
+                    <Route path={"/category/:category/:id"} element={<Details type={true}/>}/>
+                    <Route path={'/vacancies'} element={<Vacancies/>}/>
+                    <Route path={"/vacancies/:id"} element={<Details type={false}/>}/>
                     <Route path={'/offers'} element={<Offers/>}/>
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>
