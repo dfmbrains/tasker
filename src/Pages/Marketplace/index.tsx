@@ -7,16 +7,14 @@ import {radioData1} from "../../Utils/radioData";
 import MainListLayout from "../../Components/MainListLayout";
 
 const MarketPlace = () => {
-
     const services = dataService;
-
     return (
         <MainListLayout tools={<h1 className="pageTitle">Дизайн Логотипов</h1>}>
             <>
                 <MarketPlaceAside data={radioData1}/>
                 <div className="list">
-                    {services.map((item) => (
-                        <ServiceCard obj={item}/>
+                    {services.map((item, idx) => (
+                        <ServiceCard key={idx} obj={item}/>
                     ))}
                 </div>
             </>

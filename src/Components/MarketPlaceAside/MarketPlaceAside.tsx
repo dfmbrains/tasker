@@ -14,11 +14,11 @@ const MarketPlaceAside: FC<IMarketPlaceAside> = ({data}) => {
                 <span>-</span>
                 <input placeholder="До" type="number"/>
             </label>
-            {data && data.map((el: any) => (
-                <div className="MarketAside__time">
+            {data && data.map((el: any, idx: number) => (
+                <div key={idx} className="MarketAside__time">
                     <h2>{el.title}</h2>
-                    {el.data.map((r: any) => (
-                        <label>
+                    {el.data.map((r: any, idx: number) => (
+                        <label key={idx}>
                             <input name="name" type="radio"/>
                             <span>{r}</span>
                         </label>

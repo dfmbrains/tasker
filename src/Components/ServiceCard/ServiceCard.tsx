@@ -29,8 +29,8 @@ const ServiceCard: React.FC<Interface> = ({obj}) => {
                         Array.from(Array(5).keys())
                             .map((star, idx) => (
                                 idx < obj.rate
-                                    ? <img src={Star} alt="star"/>
-                                    : <img src={GreyStar} alt="null star"/>
+                                    ? <img key={idx} src={Star} alt="star"/>
+                                    : <img key={idx} src={GreyStar} alt="null star"/>
                             ))
                     }
                 </span>

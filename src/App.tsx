@@ -12,6 +12,7 @@ import LandingLayout from "./Components/LandingLayout";
 import AppLayout from "./Components/AppLayout";
 import Vacancies from "./Pages/Vacancies/Vacancies";
 import Offers from "./Pages/Offers";
+import Chat from "./Pages/Chat/Chat";
 
 function App() {
     const location = useLocation();
@@ -33,6 +34,8 @@ function App() {
                     <Route path={"/category/:category/:id"} element={<Details/>}/>
                     <Route path={'/projects'} element={<Vacancies/>}/>
                     <Route path={'/offers'} element={<Offers/>}/>
+                    <Route path={'/chat'} element={<Chat/>}/>
+                    <Route path={'/chat/:id'} element={<Chat/>}/>
                 </Route>
             </Routes>
             <Footer/>

@@ -49,8 +49,8 @@ const HomeBenefits = () => {
                     <h2 className="HomeBenefits__title">Преимущества</h2>
                     <div className="HomeBenefits__box">
                         {Benefits ?
-                            Benefits.map((card) => (
-                                <HomeBenefitCard data={card}/>
+                            Benefits.map((card, idx) => (
+                                <HomeBenefitCard key={idx} data={card}/>
                             ))
                             : ''
                         }
