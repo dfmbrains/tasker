@@ -19,6 +19,7 @@ const ChatDirect = () => {
         <p class="date">${new Date().getHours()}:${new Date().getMinutes()}</p>
         `
         document.querySelector('.chatDirect__messages')?.append(htmlNode)
+        e.target[0].value = ''
     }
 
     return (
