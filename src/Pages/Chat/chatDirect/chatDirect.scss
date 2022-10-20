@@ -54,6 +54,9 @@
     overflow-x: hidden;
     height: 100%;
   }
+  &__scroll::-webkit-scrollbar{
+    display: none;
+  }
 
   &__messages {
     display: flex;
