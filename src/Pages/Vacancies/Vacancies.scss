@@ -1,0 +1,10 @@
+.vacancies {
+  &__tools {
+    display: flex;
+    align-items: flex-start;
+
+    .pageTitle {
+      width: calc(20% - 10px);
+    }
+  }
+}

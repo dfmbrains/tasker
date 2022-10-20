@@ -14,28 +14,6 @@
     column-gap: 80px;
   }
 
-  &__search {
-    background: #FFFFFF;
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
-    padding: 0 0 0 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-
-    &_icon {
-      width: 15px;
-    }
-
-    label {
-      width: 60%;
-    }
-
-    &_btn {
-      width: 30%;
-    }
-  }
-
   &__right {
     width: 60%;
     display: flex;

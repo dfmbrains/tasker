@@ -27,10 +27,10 @@ function App() {
                         <Route path={"/signup"} element={<SignUp/>}/>
                     </Route>
                 </Route>
-                <Route path={"/app"} element={<AppLayout/>}>
-                    <Route index element={<Marketplace/>}/>
-                    <Route path={'vacancies'} element={<Vacancies/>}/>
-                    <Route path={"details/:id"} element={<Details/>}/>
+                <Route path={"/"} element={<AppLayout/>}>
+                    <Route path={'/category/:category'} element={<Marketplace/>}/>
+                    <Route path={"/category/:category/:id"} element={<Details/>}/>
+                    <Route path={'/projects'} element={<Vacancies/>}/>
                 </Route>
             </Routes>
             <Footer/>

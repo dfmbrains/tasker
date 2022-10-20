@@ -5,31 +5,7 @@
   padding: 17px;
   display: flex;
   flex-direction: column;
-
-  input[type="radio"] {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1.5px solid #A3A3A3;
-  }
-
-  input[type="radio"]:checked {
-    border: 1.5px solid #3152FF;
-    position: relative;
-  }
-
-  input[type="radio"]:checked::before {
-    content: "";
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    position: absolute;
-    background: #3152FF;
-    width: 5px;
-    height: 5px;
-  }
+  width: calc(20% - 10px);
 
   label {
     display: flex;
@@ -53,6 +29,7 @@
     color: #555555;
 
   }
+
   &__price {
     margin-top: 0 !important;
   }

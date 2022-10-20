@@ -16,12 +16,12 @@ const HeaderPlatform = () => {
                         <Link to={"/app"}>
                             <Logo props={3}/>
                         </Link>
-                        <form className="headerPlatform__search">
-                            <img className="headerPlatform__search_icon" src={Search} alt=""/>
+                        <form className="searchBar">
+                            <img className="searchBar__icon" src={Search} alt=""/>
                             <label>
                                 <Input placeholder={"Услугу, исполнителя"}/>
                             </label>
-                            <div className="headerPlatform__search_btn">
+                            <div className="searchBar__btn">
                                 <Button text={"Найти"} type={4}/>
                             </div>
                         </form>

@@ -45,7 +45,6 @@ const MarketPlaceAside = () => {
                     <span>До 10 дней</span>
                 </label>
             </div>
-
             <div className="MarketAside__format">
                 <h2>Задания</h2>
                 <label>
