@@ -1,0 +1,54 @@
+.offersCard {
+  padding: 17px;
+  border: 1px solid #CCD9EC;
+  border-radius: 5px;
+
+  &__status {
+    border-radius: 5px;
+    width: 50%;
+    margin: 17px 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 0;
+
+    &-true {
+      background: #0BD813;
+    }
+
+    &-false {
+      background: #FF543E;
+    }
+
+    &-pending {
+      background: #3152FF;
+    }
+  }
+
+  &__button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 112%;
+    width: 100%;
+    background: none;
+    border-radius: 5px;
+    padding: 7px 0 8px;
+
+    &-true {
+      border: 1px solid #0BD813;
+      color: #0BD813;
+    }
+
+    &-false {
+      border: 1px solid #FF543E;
+      color: #FF543E;
+    }
+
+    &-pending {
+      border: 1px solid #3152FF;
+      color: #3152FF;
+    }
+  }
+}

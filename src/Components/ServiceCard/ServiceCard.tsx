@@ -20,11 +20,11 @@ const ServiceCard: React.FC<Interface> = ({obj}) => {
     const navigate = useNavigate();
     return (
         <div onClick={() => navigate('1')} className="card serviceCard">
-            <img className="ServiceCard__img" src={obj.image} alt="image"/>
-            <div className="ServiceCard__user">
-                <img className="ServiceCard__user_avatar" src={obj.avatar} alt="avatar"/>
-                <span className="ServiceCard__user_username">{obj.user}</span>
-                <span className="ServiceCard__user_stars">
+            <img className="serviceCard__img" src={obj.image} alt="image"/>
+            <div className="serviceCard__user">
+                <img className="serviceCard__user_avatar" src={obj.avatar} alt="avatar"/>
+                <span className="serviceCard__user_username">{obj.user}</span>
+                <span className="serviceCard__user_stars">
                     {
                         Array.from(Array(5).keys())
                             .map((star, idx) => (
@@ -36,14 +36,14 @@ const ServiceCard: React.FC<Interface> = ({obj}) => {
                 </span>
             </div>
             <hr/>
-            <span className="ServiceCard__payment">
+            <span className="serviceCard__payment">
                     {obj.from ?
                         <span>От {obj.from} тг </span>
                         : ''
                     }
             </span>
 
-            <span className="ServiceCard__desc">
+            <span className="serviceCard__desc">
                 {obj.desc.slice(0, 60)}
             </span>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './cardHeader.scss';
-import CasperLogo from "../VacancyCard/img/casperLogo.png";
+import CasperLogo from "./img/casperLogo.png";
 
 const CardHeader = () => {
     return (
