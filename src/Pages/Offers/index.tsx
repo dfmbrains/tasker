@@ -10,7 +10,7 @@ const Offers = () => {
     return (
         <MainListLayout tools={<h1 className="pageTitle">Отклики на Вакансии</h1>}>
             <>
-                <MarketPlaceAside data={[radioData1[0], radioData2[0], radioData1[1]]}/>
+                <MarketPlaceAside cities={true} data={[radioData1[0], radioData2[0], radioData1[1]]}/>
                 <div className="list">
                     {data.map((el, idx) => (
                         <OffersCard status={el === 0 ? true : el === 1 ? false : 'pending'} id={idx}/>

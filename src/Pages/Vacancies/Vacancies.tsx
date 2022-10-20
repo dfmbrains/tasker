@@ -32,7 +32,7 @@ const Vacancies = () => {
         <>
             <MainListLayout tools={<VacanciesTools/>}>
                 <>
-                    <MarketPlaceAside data={radioData2}/>
+                    <MarketPlaceAside cities={true} data={radioData2}/>
                     <div className="list">
                         {Array.from(Array(24).keys()).map((el: number) => (
                             <VacancyCard/>
