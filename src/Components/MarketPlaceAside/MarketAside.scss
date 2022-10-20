@@ -19,6 +19,7 @@
     font-size: 16px;
     line-height: 100%;
     color: #555555;
+    flex: auto;
   }
 
   h2 {
@@ -27,11 +28,6 @@
     font-size: 16px;
     line-height: 100%;
     color: #555555;
-
-  }
-
-  &__price {
-    margin-top: 0 !important;
   }
 
   &__fromTo {
@@ -47,11 +43,11 @@
 
     input {
       outline: none;
-      width: calc(50% - 10px);
+      width: calc(50% - 5px);
       background: #FFFFFF;
       border: 1px solid #D9D9D9;
       border-radius: 8px;
-      padding: 12px 8px;
+      padding: 8px;
       font-size: 16px;
       line-height: 100%;
       color: #555555;
@@ -62,13 +58,31 @@
     }
   }
 
-  &__time {
+  &__m0 {
+    margin-top: 0 !important;
+  }
+
+  &__select {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #555555;
+    padding: 8px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+  }
+
+  &__radios {
     row-gap: 12px;
     display: flex;
     flex-direction: column;
 
     h2 {
       margin-bottom: 0;
+    }
+
+    &_title {
+      width: calc(100% - 14px - 11px);
     }
   }
 }
