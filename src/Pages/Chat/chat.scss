@@ -1,0 +1,11 @@
+.chat {
+  padding: 0 0 40px 0;
+  background: #FFFFFF;
+  height: calc(100vh - 170px - 173px);
+  display: flex;
+  border-collapse: collapse;
+  &__main{
+    display: flex;
+    height: 100%;
+  }
+}

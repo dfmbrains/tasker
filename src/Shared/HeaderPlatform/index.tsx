@@ -42,7 +42,7 @@ const HeaderPlatform = () => {
                                     </svg>
                                 </button>
                             </p>
-                            <Link className="headerPlatform__nav_item" to={"/app"}>Чат</Link>
+                            <Link className="headerPlatform__nav_item" to={"/chat"}>Чат</Link>
                         </nav>
                         <button className="headerPlatform__notification">
                             <svg width="20" height="22" viewBox="0 0 23 25" fill="none"
@@ -73,39 +73,43 @@ const HeaderPlatform = () => {
                     </div>
                 </div>
                 <div className="headerPlatform__categories">
-                    {categoryArr.map((category) => (
-                        <Link className="headerPlatform__categories_item" to={"/app"}>{category}</Link>
+                    {categoryArr.map((category , idx) => (
+                        <Link key={idx} className="headerPlatform__categories_item" to={"/app"}>{category}</Link>
                     ))}
                 </div>
-                <div className="headerPlatform__history">
-                    <Link to={"/"} className="headerPlatform__history_item">Дизайн</Link>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clipPath="url(#clip0_18_703)">
-                            <path
-                                d="M7.1543 13.7166L10.9751 9.89575L7.1543 6.07492L8.33346 4.89575L13.3335 9.89575L8.33346 14.8958L7.1543 13.7166Z"
-                                fill="#555555"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_18_703">
-                                <rect width="20" height="20" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <Link to={"/"} className="headerPlatform__history_item">Логотипы и брендинг</Link>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clipPath="url(#clip0_18_703)">
-                            <path
-                                d="M7.1543 13.7166L10.9751 9.89575L7.1543 6.07492L8.33346 4.89575L13.3335 9.89575L8.33346 14.8958L7.1543 13.7166Z"
-                                fill="#555555"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_18_703">
-                                <rect width="20" height="20" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <Link to={"/"} className="headerPlatform__history_item">Логотипы</Link>
-                </div>
+                {
+                    !window.location.href.includes('chat')
+                        ? <div className="headerPlatform__history">
+                            <Link to={"/"} className="headerPlatform__history_item">Дизайн</Link>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_18_703)">
+                                    <path
+                                        d="M7.1543 13.7166L10.9751 9.89575L7.1543 6.07492L8.33346 4.89575L13.3335 9.89575L8.33346 14.8958L7.1543 13.7166Z"
+                                        fill="#555555"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_18_703">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <Link to={"/"} className="headerPlatform__history_item">Логотипы и брендинг</Link>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_18_703)">
+                                    <path
+                                        d="M7.1543 13.7166L10.9751 9.89575L7.1543 6.07492L8.33346 4.89575L13.3335 9.89575L8.33346 14.8958L7.1543 13.7166Z"
+                                        fill="#555555"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_18_703">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <Link to={"/"} className="headerPlatform__history_item">Логотипы</Link>
+                        </div>
+                        : ''
+                }
             </div>
         </header>
     );

@@ -14,8 +14,8 @@ const MarketPlace = () => {
             <div className="container">
                 <MarketPlaceAside data={radioData1}/>
                 <div className="MarketPlace__main">
-                    {services.map((item) => (
-                        <ServiceCard obj={item}/>
+                    {services.map((item, idx) => (
+                        <ServiceCard key={idx} obj={item}/>
                     ))}
                 </div>
             </div>
