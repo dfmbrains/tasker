@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {FC} from 'react';
 import './vacancyCard.scss';
 import Button from "../Button";
 import CardHeader from "../CardHeader";
+import {useNavigate} from "react-router";
 
-const VacancyCard = () => {
+interface IVacancyCard {
+    offer: boolean,
+    status?: boolean | string,
+    id?: number
+}
+
+const VacancyCard: FC<IVacancyCard> = ({offer, status, id}) => {
+    const navigate = useNavigate()
     return (
         <div className="card vacancyCard">
             <CardHeader/>
+            {offer && <p className={`vacancyCard__status vacancyCard__status-${status}`}>Приглашение</p>}
             <h2 className="vacancyCard__title">Программист Java и инженер-программист на С#</h2>
             <div className="vacancyCard__row-l vacancyCard__row">
                 <div className="vacancyCard__row-s vacancyCard__row">
@@ -29,8 +38,13 @@ const VacancyCard = () => {
             <p className="vacancyCard__text">Разработка и поддержка клиентских front-end приложений...</p>
             <div className="vacancyCard__row vacancyCard__row-sb">
                 <p className="vacancyCard__price">250 000 ₸</p>
-                <div className="vacancyCard__button">
-                    <Button text={"Подробнее"} type={6}/>
+                <div className="vacancyCard__buttonBox">
+                    {offer
+                        ? <button onClick={() => navigate(`/chat/${id}`)}
+                                  className={`vacancyCard__button vacancyCard__button-${status}`}>Перейти в чат
+                        </button>
+                        : <Button text={"Подробнее"} type={6}/>
+                    }
                 </div>
             </div>
         </div>

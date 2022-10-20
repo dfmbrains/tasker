@@ -1,0 +1,23 @@
+.searchFreelancer {
+  &__tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px;
+
+    .pageTitle {
+      margin: 0;
+    }
+  }
+
+  &__result {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #555555;
+
+    span {
+      color: #3152FF;
+    }
+  }
+}

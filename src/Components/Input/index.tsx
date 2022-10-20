@@ -2,12 +2,13 @@ import React, {FC} from 'react';
 import './input.scss';
 
 interface IInput {
-    placeholder: string
+    placeholder: string,
+    required: boolean
 }
 
-const Input: FC<IInput> = ({placeholder}) => {
+const Input: FC<IInput> = ({placeholder, required}) => {
     return (
-        <input placeholder={placeholder} className="input" type="text"/>
+        <input required={required} placeholder={placeholder} className="input" type="text"/>
     );
 };
 

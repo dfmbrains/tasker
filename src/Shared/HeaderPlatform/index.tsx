@@ -5,9 +5,16 @@ import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 import {Link} from "react-router-dom";
 import Search from '../../Assets/icons/search.svg';
+import {useNavigate} from "react-router";
 
 const HeaderPlatform = () => {
     const categoryArr: string[] = ['Дизайн', 'Разработка и IT', 'Тексты и переводы', 'SEO и трафик', 'Соцсети и реклама', 'Аудио, видео съемка', 'Бизнес', 'Краткосрочные задачи'];
+    const navigate = useNavigate()
+
+    const searchHandler = (e: any) => {
+        e.preventDefault()
+        navigate(`/search?${e.target[0].value}`, {replace: true})
+    }
     return (
         <header className="headerPlatform">
             <div className="container">
@@ -16,13 +23,13 @@ const HeaderPlatform = () => {
                         <Link to={"/category/1"}>
                             <Logo props={3}/>
                         </Link>
-                        <form className="searchBar">
+                        <form onSubmit={(e) => searchHandler(e)} className="searchBar">
                             <img className="searchBar__icon" src={Search} alt=""/>
                             <label>
-                                <Input placeholder={"Услугу, исполнителя"}/>
+                                <Input required={true} placeholder={"Услугу, исполнителя"}/>
                             </label>
                             <div className="searchBar__btn">
-                                <Button text={"Найти"} type={4}/>
+                                <Button submit={true} text={"Найти"} type={4}/>
                             </div>
                         </form>
                     </div>
@@ -73,7 +80,7 @@ const HeaderPlatform = () => {
                     </div>
                 </div>
                 <div className="headerPlatform__categories">
-                    {categoryArr.map((category , idx) => (
+                    {categoryArr.map((category, idx) => (
                         <Link key={idx} className="headerPlatform__categories_item" to={"/category/1"}>{category}</Link>
                     ))}
                 </div>
