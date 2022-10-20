@@ -6,6 +6,7 @@ interface IButton {
     type: number,
     children?: any,
     action?: any
+    submit?: boolean
 }
 
 const ButtonTypes = (type: number) => {
@@ -27,9 +28,10 @@ const ButtonTypes = (type: number) => {
     }
 }
 
-const Button: FC<IButton> = ({text, type, children, action}) => {
+const Button: FC<IButton> = ({text, type, children, action, submit}) => {
     return (
-        <button onClick={action} className={`button ${ButtonTypes(type)}`}>{children}{text}</button>
+        <button type={submit ? "submit" : "button"} onClick={action}
+                className={`button ${ButtonTypes(type)}`}>{children}{text}</button>
     );
 };
 

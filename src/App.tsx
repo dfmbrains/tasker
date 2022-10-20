@@ -14,6 +14,10 @@ import Vacancies from "./Pages/Vacancies/Vacancies";
 import Offers from "./Pages/Offers";
 import Chat from "./Pages/Chat/Chat";
 import MyProfile from "./Pages/MyProfile/MyProfile";
+import ValidateSearchPath from './Utils/ValidateSearchPath';
+import SearchFreelancer from './Pages/SearchFreelancer';
+
+
 
 function App() {
     const location = useLocation();
@@ -38,6 +42,11 @@ function App() {
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>
                     <Route path={'/myProfile'} element={<MyProfile/>}/>
+                    <Route path={'/search'} element={
+                        <ValidateSearchPath>
+                            <SearchFreelancer/>
+                        </ValidateSearchPath>
+                    }/>
                 </Route>
             </Routes>
             <Footer/>

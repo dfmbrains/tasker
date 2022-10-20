@@ -16,7 +16,7 @@ const VacanciesTools = () => {
                 <form className="searchBar">
                     <img className="searchBar__icon" src={Search} alt=""/>
                     <label>
-                        <Input placeholder={"Услугу, исполнителя"}/>
+                        <Input required={true} placeholder={"Услугу, исполнителя"}/>
                     </label>
                     <div className="searchBar__btn">
                         <Button text={"Найти"} type={4}/>
@@ -35,7 +35,7 @@ const Vacancies = () => {
                     <MarketPlaceAside cities={true} data={radioData2}/>
                     <div className="list">
                         {Array.from(Array(24).keys()).map((el: number) => (
-                            <VacancyCard/>
+                            <VacancyCard offer={false}/>
                         ))}
                     </div>
                 </>
