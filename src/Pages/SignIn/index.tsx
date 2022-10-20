@@ -25,7 +25,7 @@ const SignIn = () => {
                     </svg>
                     <input placeholder="Пароль" type="password"/>
                 </label>
-                <Button action={() => navigate('/app')} text={"Войти"} type={3}/>
+                <Button action={() => navigate('/category/1')} text={"Войти"} type={3}/>
                 <Link className="sign__link" to={"/"}>Забыли пароль ?</Link>
             </form>
         </>

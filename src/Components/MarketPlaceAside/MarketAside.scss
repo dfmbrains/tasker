@@ -64,17 +64,7 @@
   }
 
   &__time {
-    row-gap: 15px;
-    display: flex;
-    flex-direction: column;
-
-    h2 {
-      margin-bottom: 0;
-    }
-  }
-
-  &__format {
-    gap: 11px;
+    row-gap: 12px;
     display: flex;
     flex-direction: column;
 

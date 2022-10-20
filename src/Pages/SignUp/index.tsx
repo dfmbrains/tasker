@@ -53,7 +53,7 @@ const SignUp = () => {
                     Работодатель
                 </label>
             </div>
-            <Button action={() => navigate('/app')} text={"Зарегистрироваться"} type={3}/>
+            <Button action={() => navigate('/category/1')} text={"Зарегистрироваться"} type={3}/>
         </form>
     );
 };
