@@ -1,12 +1,15 @@
 import React, {FC} from 'react';
 import './offersCard.scss';
 import CardHeader from "../CardHeader";
+import {useNavigate} from "react-router";
 
 interface IOffersCard {
-    status: boolean | string
+    status: boolean | string,
+    id: number
 }
 
-const OffersCard: FC<IOffersCard> = ({status}) => {
+const OffersCard: FC<IOffersCard> = ({status, id}) => {
+    const navigate = useNavigate()
     return (
         <div className="card offersCard">
             <CardHeader/>
@@ -34,7 +37,9 @@ const OffersCard: FC<IOffersCard> = ({status}) => {
             <div className="vacancyCard__row vacancyCard__row-sb">
                 <p className="vacancyCard__price">250 000 ₸</p>
                 <div className="vacancyCard__button">
-                    <button className={`offersCard__button offersCard__button-${status}`}>Перейти в чат</button>
+                    <button onClick={() => navigate(`/chat/${id}`)}
+                            className={`offersCard__button offersCard__button-${status}`}>Перейти в чат
+                    </button>
                 </div>
             </div>
         </div>

@@ -12,8 +12,8 @@ const Offers = () => {
             <>
                 <MarketPlaceAside data={[radioData1[0], radioData2[0], radioData1[1]]}/>
                 <div className="list">
-                    {data.map((el) => (
-                        <OffersCard status={el === 0 ? true : el === 1 ? false : 'pending'}/>
+                    {data.map((el, idx) => (
+                        <OffersCard status={el === 0 ? true : el === 1 ? false : 'pending'} id={idx}/>
                     ))}
                 </div>
             </>
