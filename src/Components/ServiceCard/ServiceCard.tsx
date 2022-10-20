@@ -2,7 +2,6 @@ import React from 'react';
 import './ServiceCard.scss';
 import Star from '../../Assets/icons/star.svg';
 import GreyStar from '../../Assets/icons/greyStar.svg';
-import Tenge from "../Tenge/Tenge";
 import {useNavigate} from "react-router";
 
 interface Interface {
@@ -20,7 +19,7 @@ interface Interface {
 const ServiceCard: React.FC<Interface> = ({obj}) => {
     const navigate = useNavigate();
     return (
-        <div onClick={() => navigate('details/1')} className="ServiceCard">
+        <div onClick={() => navigate('1')} className="card serviceCard">
             <img className="ServiceCard__img" src={obj.image} alt="image"/>
             <div className="ServiceCard__user">
                 <img className="ServiceCard__user_avatar" src={obj.avatar} alt="avatar"/>

@@ -4,6 +4,7 @@ import Logo from "../../Components/Logo";
 import Inst from './icons/instagram.png';
 import Teleg from './icons/Telegram.png';
 import Face from './icons/facebook.png';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -11,7 +12,9 @@ const Footer = () => {
             <div className="container">
                 <div className="Footer__main">
                     <div className="Footer__main_up">
-                        <Logo props={2}/>
+                        <Link to={"/category/1"}>
+                            <Logo props={2}/>
+                        </Link>
                         <ul>
                             <li>С чего начать</li>
                             <li>Преимущества</li>

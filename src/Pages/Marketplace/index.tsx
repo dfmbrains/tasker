@@ -4,22 +4,23 @@ import dataService from "../../Components/ServiceCard/images/dataService";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import MarketPlaceAside from "../../Components/MarketPlaceAside/MarketPlaceAside";
 import {radioData1} from "../../Utils/radioData";
+import MainListLayout from "../../Components/MainListLayout";
 
 const MarketPlace = () => {
 
     const services = dataService;
 
     return (
-        <section className="MarketPlace">
-            <div className="container">
+        <MainListLayout tools={<h1 className="pageTitle">Дизайн Логотипов</h1>}>
+            <>
                 <MarketPlaceAside data={radioData1}/>
-                <div className="MarketPlace__main">
+                <div className="list">
                     {services.map((item) => (
                         <ServiceCard obj={item}/>
                     ))}
                 </div>
-            </div>
-        </section>
+            </>
+        </MainListLayout>
     );
 };
 

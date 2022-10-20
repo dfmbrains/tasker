@@ -13,7 +13,7 @@ const HeaderPlatform = () => {
             <div className="container">
                 <div className="headerPlatform__main">
                     <div className="headerPlatform__left">
-                        <Link to={"/app"}>
+                        <Link to={"/category/1"}>
                             <Logo props={3}/>
                         </Link>
                         <form className="searchBar">
@@ -29,10 +29,10 @@ const HeaderPlatform = () => {
                     <div className="headerPlatform__right">
                         <nav className="headerPlatform__nav">
                             <Link className="headerPlatform__nav_item" to={"/app"}>Мои заказы</Link>
-                            <Link className="headerPlatform__nav_item" to={"/app"}>Биржа</Link>
+                            <Link className="headerPlatform__nav_item" to={"/projects"}>Биржа</Link>
                             <Link className="headerPlatform__nav_item" to={"/app"}>Избранные</Link>
                             <Link className="headerPlatform__nav_item" to={"/app"}>Заказы</Link>
-                            <p className="headerPlatform__nav_item">
+                            <Link to={"/offers"} className="headerPlatform__nav_item">
                                 Отклики
                                 <button className="headerPlatform__more">
                                     <svg width="10" height="8" viewBox="0 0 14 8" fill="none"
@@ -41,7 +41,7 @@ const HeaderPlatform = () => {
                                               fill="#555555"/>
                                     </svg>
                                 </button>
-                            </p>
+                            </Link>
                             <Link className="headerPlatform__nav_item" to={"/app"}>Чат</Link>
                         </nav>
                         <button className="headerPlatform__notification">

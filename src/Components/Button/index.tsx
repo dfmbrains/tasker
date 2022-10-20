@@ -20,6 +20,8 @@ const ButtonTypes = (type: number) => {
             return 'button__blue';
         case 5:
             return 'button__transparent-2';
+        case 6:
+            return 'button__blue_transparent';
         default:
             return ""
     }

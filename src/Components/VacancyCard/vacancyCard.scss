@@ -1,0 +1,57 @@
+.vacancyCard {
+  padding: 17px;
+  border: 1px solid #CCD9EC;
+  border-radius: 5px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 110%;
+    color: #555555;
+    margin: 0 0 10px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &-l {
+      column-gap: 17px;
+    }
+
+    &-s {
+      column-gap: 5px;
+    }
+
+    &-sb {
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: #A3A3A3;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 125%;
+    color: #A3A3A3;
+    margin: 10px 0 17px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #3152FF;
+    white-space: nowrap;
+  }
+
+  &__button {
+    width: 50%;
+  }
+}

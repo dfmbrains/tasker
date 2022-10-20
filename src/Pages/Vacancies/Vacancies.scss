@@ -2,9 +2,14 @@
   &__tools {
     display: flex;
     align-items: flex-start;
+    column-gap: 20px;
 
     .pageTitle {
       width: calc(20% - 10px);
+    }
+
+    &_form {
+      width: calc(80% - 10px);
     }
   }
 }

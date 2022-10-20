@@ -11,6 +11,7 @@ import Marketplace from "./Pages/Marketplace";
 import LandingLayout from "./Components/LandingLayout";
 import AppLayout from "./Components/AppLayout";
 import Vacancies from "./Pages/Vacancies/Vacancies";
+import Offers from "./Pages/Offers";
 
 function App() {
     const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
                     <Route path={'/category/:category'} element={<Marketplace/>}/>
                     <Route path={"/category/:category/:id"} element={<Details/>}/>
                     <Route path={'/projects'} element={<Vacancies/>}/>
+                    <Route path={'/offers'} element={<Offers/>}/>
                 </Route>
             </Routes>
             <Footer/>
