@@ -1,14 +1,29 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import './details.scss';
 import ContactImg from './img/contactImg.png';
 import DetailsImg from './img/detailsImg.png';
 import Button from "../../Components/Button";
+import LetterModal from "../../Components/Modals/LetterModal";
 
 interface IDetails {
     type: boolean
 }
 
 const Details: FC<IDetails> = ({type}) => {
+    const [modal, setModal] = useState(false)
+    useEffect(() => {
+        const body = document.querySelector('body')
+        if (body) {
+            body.style.overflow = modal ? 'hidden' : 'auto'
+        }
+    }, [modal])
+    const modalHandler = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
+        setModal(!modal)
+    }
     return (
         <main className="details">
             <div className="container">
@@ -155,7 +170,7 @@ const Details: FC<IDetails> = ({type}) => {
                                     <span className="details__light">01.08.2022</span>
                                 </div>
                                 <div className="details__start_button">
-                                    <Button text={"Начать выполнение"} type={4}/>
+                                    <Button action={modalHandler} text={"Начать выполнение"} type={4}/>
                                 </div>
                             </>
                             : <>
@@ -211,13 +226,14 @@ const Details: FC<IDetails> = ({type}) => {
                                     <span className="details__light">1.08.2022</span>
                                 </div>
                                 <div className="details__start_button">
-                                    <Button text={"Откликнуться"} type={4}/>
+                                    <Button action={modalHandler} text={"Откликнуться"} type={4}/>
                                 </div>
                             </>
                         }
                     </div>
                 </div>
             </div>
+            {!type && modal && <LetterModal close={modalHandler}/>}
         </main>
     );
 };
