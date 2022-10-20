@@ -37,8 +37,7 @@
   &__fromTo {
     display: flex;
     align-items: center;
-    row-gap: 10px;
-    column-gap: 3px !important;
+    justify-content: space-between;
 
     span {
       font-size: 16px;
@@ -48,7 +47,7 @@
 
     input {
       outline: none;
-      max-width: 120px;
+      width: calc(50% - 10px);
       background: #FFFFFF;
       border: 1px solid #D9D9D9;
       border-radius: 8px;

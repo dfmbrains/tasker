@@ -28,10 +28,10 @@ const HeaderPlatform = () => {
                     </div>
                     <div className="headerPlatform__right">
                         <nav className="headerPlatform__nav">
-                            <Link className="headerPlatform__nav_item" to={"/app"}>Мои заказы</Link>
+                            <Link className="headerPlatform__nav_item" to={"/category/1"}>Мои заказы</Link>
                             <Link className="headerPlatform__nav_item" to={"/projects"}>Биржа</Link>
-                            <Link className="headerPlatform__nav_item" to={"/app"}>Избранные</Link>
-                            <Link className="headerPlatform__nav_item" to={"/app"}>Заказы</Link>
+                            <Link className="headerPlatform__nav_item" to={"/category/1"}>Избранные</Link>
+                            <Link className="headerPlatform__nav_item" to={"/category/1"}>Заказы</Link>
                             <Link to={"/offers"} className="headerPlatform__nav_item">
                                 Отклики
                                 <button className="headerPlatform__more">
@@ -74,7 +74,7 @@ const HeaderPlatform = () => {
                 </div>
                 <div className="headerPlatform__categories">
                     {categoryArr.map((category , idx) => (
-                        <Link key={idx} className="headerPlatform__categories_item" to={"/app"}>{category}</Link>
+                        <Link key={idx} className="headerPlatform__categories_item" to={"/category/1"}>{category}</Link>
                     ))}
                 </div>
                 {
