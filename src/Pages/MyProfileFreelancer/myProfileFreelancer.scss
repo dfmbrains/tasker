@@ -9,14 +9,42 @@
   &__profile {
     display: flex;
 
-    &_left {
-      display: flex;
-      flex-direction: column;
-    }
-
     &_right {
+      margin-left: 20px;
       display: flex;
       flex-direction: column;
+      row-gap: 12px;
+
+      &-name {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #555555;
+      }
+
+      &-role {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #555555;
+      }
+      &-desc{
+        background: #FFFFFF;
+        border: 1px solid #CCD9EC;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 600px;
+
+       span{
+         font-family: 'Cera Pro', sans-serif;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 26px;
+         white-space: revert;
+         color: #555555;
+       }
+      }
     }
   }
 }
