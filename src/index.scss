@@ -5,30 +5,31 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Cera Pro', sans-serif;
-  input[type="radio"] {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1.5px solid #3152FF;
-  }
+}
 
-  input[type="radio"]:checked {
-    border: 1.5px solid #3152FF;
-    position: relative;
-  }
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid #3152FF;
+}
 
-  input[type="radio"]:checked::before {
-    content: "";
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    position: absolute;
-    background: #3152FF;
-    width: 5px;
-    height: 5px;
-  }
+input[type="radio"]:checked {
+  border: 1.5px solid #3152FF;
+  position: relative;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  position: absolute;
+  background: #3152FF;
+  width: 5px;
+  height: 5px;
 }
 
 button {
@@ -92,7 +93,6 @@ li {
     width: calc((100% - 15px) / 3);
   }
 }
-
 
 
 .pagination {
