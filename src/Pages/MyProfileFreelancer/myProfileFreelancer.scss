@@ -28,23 +28,58 @@
         font-size: 22px;
         color: #555555;
       }
-      &-desc{
+
+      &-desc {
         background: #FFFFFF;
         border: 1px solid #CCD9EC;
         border-radius: 8px;
         padding: 20px;
         max-width: 600px;
 
-       span{
-         font-family: 'Cera Pro', sans-serif;
-         font-style: normal;
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 26px;
-         white-space: revert;
-         color: #555555;
-       }
+        span {
+          font-family: 'Cera Pro', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          white-space: revert;
+          color: #555555;
+        }
       }
     }
   }
+
+  &__portfolio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    .showMore{
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 12px 80px;
+      border: 1px solid #555555;
+      align-self: center;
+      background: none;
+      border-radius: 5px;
+      color: #555555;
+      margin-bottom: 100px;
+
+    }
+    &_title {
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      text-transform: uppercase;
+      color: #555555;
+    }
+
+    &_works {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 15px;
+
+    }
+  }
+
 }
