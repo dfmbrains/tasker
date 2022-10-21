@@ -1,0 +1,19 @@
+.datePicker {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  input {
+    background: #FFFFFF;
+    border: 1px solid #CCD9EC;
+    border-radius: 8px;
+    padding: 7px 17px;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #555555;
+  }
+}

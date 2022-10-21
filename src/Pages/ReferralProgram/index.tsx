@@ -1,5 +1,6 @@
 import React, {FC, useRef} from 'react';
 import './referralProgram.scss';
+import DatePicker from "../../Components/DatePicker";
 
 interface IReferralProgramBox {
     title: string,
@@ -16,11 +17,7 @@ const ReferralProgramBox: FC<IReferralProgramBox> = ({title, children}) => {
             <div className="referralProgram__table_content">
                 <div className="referralProgram__table_tools">
                     <input placeholder={"Поиск"} className="referralProgram__table_description" type="text"/>
-                    <label>
-                        <input placeholder={"С даты"} type="date"/>
-                        <span>-</span>
-                        <input placeholder={"По дату"} type="date"/>
-                    </label>
+                    <DatePicker/>
                     <p className="referralProgram__table_description referralProgram__table_tools-period">
                         За выбранный период:
                         <span>0, 0.00</span>

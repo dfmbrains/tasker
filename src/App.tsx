@@ -17,6 +17,7 @@ import MyProfile from "./Pages/MyProfile/MyProfile";
 import ValidateSearchPath from './Utils/ValidateSearchPath';
 import SearchFreelancer from './Pages/SearchFreelancer';
 import ReferralProgram from "./Pages/ReferralProgram";
+import Statistics from "./Pages/Statistics";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
                     <Route path={'/chat/:id'} element={<Chat/>}/>
                     <Route path={'/myProfile'} element={<MyProfile/>}/>
                     <Route path={'/referral_program'} element={<ReferralProgram/>}/>
+                    <Route path={'/statistics'} element={<Statistics/>}/>
                     <Route path={'/search'} element={
                         <ValidateSearchPath>
                             <SearchFreelancer/>
