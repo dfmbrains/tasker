@@ -170,7 +170,7 @@ const Details: FC<IDetails> = ({type}) => {
                                     <span className="details__light">01.08.2022</span>
                                 </div>
                                 <div className="details__start_button">
-                                    <Button action={modalHandler} text={"Начать выполнение"} type={4}/>
+                                    <Button text={"Начать выполнение"} type={4}/>
                                 </div>
                             </>
                             : <>
