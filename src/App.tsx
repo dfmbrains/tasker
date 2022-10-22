@@ -19,6 +19,7 @@ import ReferralProgram from "./Pages/ReferralProgram";
 import Statistics from "./Pages/Statistics";
 import Categories from "./Pages/Categories";
 import MarketPlace from "./Pages/MarketPlace";
+import Balance from "./Pages/Balance";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                     <Route path={'/myProfile'} element={<MyProfile/>}/>
                     <Route path={'/referral_program'} element={<ReferralProgram/>}/>
                     <Route path={'/statistics'} element={<Statistics/>}/>
+                    <Route path={'/balance'} element={<Balance/>}/>
                     <Route path={'/search'} element={
                         <ValidateSearchPath>
                             <SearchFreelancer/>

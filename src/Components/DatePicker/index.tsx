@@ -4,9 +4,15 @@ import './datePicker.scss';
 const DatePicker = () => {
     return (
         <label className="datePicker">
-            <input placeholder={"С даты"} type="date"/>
+            <input
+                onFocus={(e) => e.target.type = 'date'}
+                onBlur={(e) => e.target.value ? '' : e.target.type = 'text'}
+                placeholder={"С даты"} type="text"/>
             <span>-</span>
-            <input placeholder={"По дату"} type="date"/>
+            <input
+                onFocus={(e) => e.target.type = 'date'}
+                onBlur={(e) => e.target.value ? '' : e.target.type = 'text'}
+                placeholder={"По дату"} type="text"/>
         </label>
     );
 };
