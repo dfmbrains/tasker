@@ -6,6 +6,7 @@ import {dataJobs} from "./jobs/dataJobs";
 
 import PortFolioCard from "../../Components/PortFolioCard/PortFolioCard";
 import Reviews from "../../Components/Reviews/Reviews";
+import ShowMoreBtn from "../../Components/ShowMoreButton/ShowMoreBtn";
 
 const MyProfileFreelancer = () => {
 
@@ -47,7 +48,7 @@ const MyProfileFreelancer = () => {
                                 <PortFolioCard idx={idx} work={work} key={idx}/>
                             ))}
                         </div>
-                        <button className="showMore">Показать еще</button>
+                       <ShowMoreBtn/>
                         <Reviews username={'Erbol'}/>
                     </div>
                 </div>
