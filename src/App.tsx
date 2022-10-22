@@ -20,7 +20,8 @@ import Statistics from "./Pages/Statistics";
 import Categories from "./Pages/Categories";
 import MarketPlace from "./Pages/MarketPlace";
 import Balance from "./Pages/Balance";
-import Tasks from "./Pages/Tasks";
+import MyTasks from "./Pages/MyTasks";
+import CreateTask from "./Pages/CreateTask";
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
                     <Route path={'/referral_program'} element={<ReferralProgram/>}/>
                     <Route path={'/statistics'} element={<Statistics/>}/>
                     <Route path={'/balance'} element={<Balance/>}/>
-                    <Route path={'/tasks'} element={<Tasks/>}/>
+                    <Route path={'/my_tasks'} element={<MyTasks/>}/>
+                    <Route path={'/create_task'} element={<CreateTask/>}/>
                     <Route path={'/search'} element={
                         <ValidateSearchPath>
                             <SearchFreelancer/>

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './tasks.scss';
 import Button from "../../Components/Button";
+import MyTasksCard from "../../Components/MyTasksCard";
 
-const Tasks = () => {
+const MyTasks = () => {
     const [nav, setNav] = useState(1)
 
     const switchNav = (type: number) => {
@@ -30,9 +31,14 @@ const Tasks = () => {
                        className={switchNav(5)}>Остановленные</p>
                     <Button text={"Создать здание"} type={4}/>
                 </div>
+                <div className="tasks__list">
+                    {Array.from(Array(5).keys()).map(el => (
+                        <MyTasksCard/>
+                    ))}
+                </div>
             </div>
         </main>
     );
 };
 
-export default Tasks;
+export default MyTasks;
