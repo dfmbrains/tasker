@@ -32,11 +32,11 @@
       select {
         width: calc(50% - 8.5px);
       }
-    }
 
-    &:last-child {
-      label {
-        width: calc(50% - 8.5px);
+      &:last-child {
+        label {
+          width: calc(50% - 8.5px);
+        }
       }
     }
   }
@@ -116,6 +116,16 @@
       font-size: 16px;
       line-height: 100%;
       color: #C0C0C0;
+    }
+  }
+
+  &__total {
+    width: 25%;
+    margin: 0 auto;
+
+    .cost {
+      margin: 40px 0 30px;
+      justify-content: center;
     }
   }
 }

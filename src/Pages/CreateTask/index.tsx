@@ -1,5 +1,7 @@
 import React from 'react';
 import './createTask.scss';
+import Cost from "../../Components/Cost";
+import Button from "../../Components/Button";
 
 const CreateTask = () => {
     return (
@@ -54,7 +56,7 @@ const CreateTask = () => {
                         <div className="createTask__part_row">
                             <label>
                                 <h3>Введите сумму</h3>
-                                <input type="text" placeholder="Введите название"/>
+                                <input type="text" placeholder="Введите значение"/>
                             </label>
                             <label>
                                 <h3>Время</h3>
@@ -67,7 +69,8 @@ const CreateTask = () => {
                         </div>
                     </div>
                     <div className="createTask__total">
-                        <span>Итог:</span>
+                        <Cost/>
+                        <Button text={"Продолжить"} type={4}/>
                     </div>
                 </form>
             </div>

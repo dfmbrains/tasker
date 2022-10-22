@@ -22,6 +22,7 @@ import MarketPlace from "./Pages/MarketPlace";
 import Balance from "./Pages/Balance";
 import MyTasks from "./Pages/MyTasks";
 import CreateTask from "./Pages/CreateTask";
+import MarketPlaceDetails from "./Pages/MarketPlace/details";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
                 <Route path={"/"} element={<AppLayout/>}>
                     <Route path={'/category/:category'} element={<Categories/>}/>
                     <Route path={'/marketplace'} element={<MarketPlace/>}/>
+                    <Route path={'/marketplace/:id'} element={<MarketPlaceDetails/>}/>
                     <Route path={"/category/:category/:id"} element={<Details type={true}/>}/>
                     <Route path={'/vacancies'} element={<Vacancies/>}/>
                     <Route path={"/vacancies/:id"} element={<Details type={false}/>}/>
