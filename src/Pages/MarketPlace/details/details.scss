@@ -1,0 +1,140 @@
+.MarketPlaceDetails {
+  display: flex;
+  width: calc(80% - 10px);
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 70px;
+
+  &__submit {
+    margin: 10px 0;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .sumDetails {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #555555;
+
+    }
+
+    .comission {
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #A3A3A3;
+    }
+
+    button {
+      padding: 12px 30px;
+      border: none;
+      background: #3152FF;
+      border-radius: 5px;
+
+      font-family: 'Cera Pro', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+
+    }
+  }
+
+  &__offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      row-gap: 8px;
+
+      h2 {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #555555;
+      }
+
+      input {
+        background: #FFFFFF;
+        border: 1px solid #CCD9EC;
+        border-radius: 8px;
+        padding: 12px;
+        width: 100%;
+      }
+
+      input::placeholder {
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #A3A3A3;
+      }
+    }
+  }
+
+  &__label {
+    background: #FFFFFF;
+    border: 1px solid #CCD9EC;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    ul {
+      li {
+        list-style-type: disc;
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 15px;
+        color: #555555;
+      }
+
+      li:first-child {
+        margin-left: 0;
+        list-style-type: none;
+        font-family: 'Cera Pro', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #555555;
+      }
+    }
+  }
+
+  &__input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 250px;
+    background: #F7FAFC;
+    border: 1px solid #CCD9EC;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    padding: 15px;
+
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__input::placeholder {
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A3A3A3;
+
+  }
+}

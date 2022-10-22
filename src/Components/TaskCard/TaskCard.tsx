@@ -4,10 +4,11 @@ import Djamal from '../../Assets/img/DjamalJyrnyi.webp';
 import {Link} from "react-router-dom";
 
 interface Interface {
-    idx: number
+    idx: number,
+    type?: boolean
 }
 
-const TaskCard: React.FC<Interface> = ({idx}) => {
+const TaskCard: React.FC<Interface> = ({idx, type}) => {
     return (
         <div className="TaskCard">
             <div className="TaskCard__up">
@@ -30,9 +31,13 @@ const TaskCard: React.FC<Interface> = ({idx}) => {
                         <span>Размещено проектовна бирже:: <a>2</a></span>
                     </div>
                 </div>
-                <Link to={`/marketplace/${idx}`} className="TaskCard__down_right">
-                    Предложить услугу
-                </Link>
+                {
+                    type
+                        ? ''
+                        : <Link to={`/marketplace/${idx}`} className="TaskCard__down_right">
+                            Предложить услугу
+                        </Link>
+                }
             </div>
         </div>
     );
