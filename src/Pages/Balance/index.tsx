@@ -1,7 +1,87 @@
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import './balance.scss';
 import Button from "../../Components/Button";
 import DatePicker from "../../Components/DatePicker";
+
+interface IBalanceActions {
+    type: boolean
+}
+
+const BalanceHistory = () => {
+    return (
+        <div className="balance__table">
+            <h2 className="balance__title">
+                <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#555555"
+                          d="M18 0H3C1.61875 0 0.5 1.11875 0.5 2.5V22.5C0.5 23.8813 1.61875 25 3 25H18C19.3813 25 20.5 23.8813 20.5 22.5V2.5C20.5 1.11875 19.3813 0 18 0ZM3 2.5H9.25V12.5L6.125 10.625L3 12.5V2.5Z"/>
+                </svg>
+                История
+            </h2>
+            <div className="balance__table_tools">
+                <DatePicker/>
+                <div className="balance__table_tools-right">
+                    <select>
+                        <option value="">Любой тип</option>
+                        <option value="">Любой тип 2</option>
+                        <option value="">Любой тип 3</option>
+                    </select>
+                    <select>
+                        <option value="">Все операции</option>
+                        <option value="">Все операции 2</option>
+                        <option value="">Все операции 3</option>
+                    </select>
+                </div>
+            </div>
+            <div className="balance__table_head">
+                <h4>Дата</h4>
+                <h4>Тип</h4>
+                <h4>Опирация</h4>
+                <h4>Описание</h4>
+                <h4>Сумма</h4>
+            </div>
+        </div>
+    )
+}
+
+const BalanceActions: FC<IBalanceActions> = ({type}) => {
+    return (
+        <div className="balance__table">
+            <h2 className="balance__title">{type ? 'Пополнить баланс' : 'Вывод средств'}</h2>
+            <form className="balance__table_row">
+                <div className="balance__table_left">
+                    <h4>Сумма {type ? 'пополнения' : 'вывода'}</h4>
+                    <label>
+                        <input placeholder="Введите сумму" type="text"/>
+                        тг
+                    </label>
+                    <p>С учетом комиссии 6% = 0тг</p>
+                </div>
+                <div className="balance__table_right">
+                    <h4>Платежная система</h4>
+                    <div className="balance__table_right-select">
+                        <label>
+                            <input name="system" type="radio"/>
+                            Qiwi
+                        </label>
+                        <label>
+                            <input name="system" type="radio"/>
+                            Visa
+                        </label>
+                        <label>
+                            <input name="system" type="radio"/>
+                            MasterCard
+                        </label>
+                    </div>
+                    <div className="balance__table_right-button">
+                        <Button text={type ? 'Пополнить' : 'Вывести'} type={4}/>
+                        {!type && <Button text={"0 тг"} type={5}/>}
+                    </div>
+                </div>
+            </form>
+        </div>
+    )
+}
 
 const Balance = () => {
     const [nav, setNav] = useState(1)
@@ -14,6 +94,20 @@ const Balance = () => {
                 return ''
         }
     }
+
+    const switchContent = () => {
+        switch (nav) {
+            case 1:
+                return <BalanceHistory/>
+            case 2:
+                return <BalanceActions type={true}/>
+            case 3:
+                return <BalanceActions type={false}/>
+            default:
+                return ''
+        }
+    }
+
     return (
         <main className="balance">
             <div className="container">
@@ -36,41 +130,7 @@ const Balance = () => {
                         <h5>Основной баланс</h5>
                         <Button text={"Пополнить"} type={4}/>
                     </div>
-                    <div className="balance__table">
-                        <h2 className="balance__title">
-                            <svg width="21" height="25" viewBox="0 0 21 25" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#555555"
-                                      d="M18 0H3C1.61875 0 0.5 1.11875 0.5 2.5V22.5C0.5 23.8813 1.61875 25 3 25H18C19.3813 25 20.5 23.8813 20.5 22.5V2.5C20.5 1.11875 19.3813 0 18 0ZM3 2.5H9.25V12.5L6.125 10.625L3 12.5V2.5Z"/>
-                            </svg>
-                            История
-                        </h2>
-                        <div className="balance__history_tools">
-                            <DatePicker/>
-                            <div className="balance__history_tools-right">
-                                <select>
-                                    <option value="">Любой тип</option>
-                                    <option value="">Любой тип 2</option>
-                                    <option value="">Любой тип 3</option>
-                                </select>
-                                <select>
-                                    <option value="">Все операции</option>
-                                    <option value="">Все операции 2</option>
-                                    <option value="">Все операции 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className="balance__history_head">
-                            <h4>Дата</h4>
-                            <h4>Тип</h4>
-                            <h4>Опирация</h4>
-                            <h4>Описание</h4>
-                            <h4>Сумма</h4>
-                        </div>
-                    </div>
-                    <div className="balance__table">
-
-                    </div>
+                    {switchContent()}
                 </div>
             </div>
         </main>
