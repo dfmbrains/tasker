@@ -85,7 +85,7 @@ const HeaderPlatform = () => {
                     ))}
                 </div>
                 {
-                    !window.location.href.includes('chat') && !window.location.href.includes('myProfile')
+                    !window.location.href.includes('chat') && !window.location.href.includes('myProfile') && !window.location.href.includes('tasks')
                         ? <div className="headerPlatform__history">
                             <Link to={"/"} className="headerPlatform__history_item">Дизайн</Link>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

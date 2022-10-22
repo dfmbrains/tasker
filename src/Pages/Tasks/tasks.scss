@@ -1,0 +1,33 @@
+.tasks {
+  padding: 0 0 80px;
+
+  .container {
+    padding: 0 10%;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px;
+
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      color: #A3A3A3;
+      padding: 10px 5px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    &_active {
+      border-bottom: 2px solid #3152FF !important;
+      color: #555555 !important;
+    }
+
+    button {
+      width: 25%;
+    }
+  }
+}
