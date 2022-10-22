@@ -1,12 +1,12 @@
 import React from 'react';
-import './MarketPlace.scss';
+import './Categories.scss';
 import dataService from "../../Components/ServiceCard/images/dataService";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import MarketPlaceAside from "../../Components/MarketPlaceAside/MarketPlaceAside";
 import {radioData1} from "../../Utils/radioData";
 import MainListLayout from "../../Components/MainListLayout";
 
-const MarketPlace = () => {
+const Categories = () => {
     const services = dataService;
     return (
         <MainListLayout tools={<h1 className="pageTitle">Дизайн Логотипов</h1>}>
@@ -22,4 +22,4 @@ const MarketPlace = () => {
     );
 };
 
-export default MarketPlace;
+export default Categories;

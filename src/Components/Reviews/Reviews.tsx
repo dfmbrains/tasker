@@ -17,7 +17,7 @@ const Reviews: React.FC<Interface> = ({username}) => {
                     <CommentCard/>
                 ))}
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', paddingTop: '40px'}}>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
                 <ShowMoreBtn/>
             </div>
 

@@ -1,0 +1,13 @@
+.MarketPlace {
+  &__main {
+    display: flex;
+    column-gap: 20px;
+    &_cards{
+      row-gap: 15px;
+      width: calc(80% - 10px);
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+    }
+  }
+}
