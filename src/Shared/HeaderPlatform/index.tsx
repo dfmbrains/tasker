@@ -36,7 +36,7 @@ const HeaderPlatform = () => {
                     <div className="headerPlatform__right">
                         <nav className="headerPlatform__nav">
                             <Link className="headerPlatform__nav_item" to={"/category/1"}>Мои заказы</Link>
-                            <Link className="headerPlatform__nav_item" to={"/vacancies"}>Биржа</Link>
+                            <Link className="headerPlatform__nav_item" to={"/marketplace"}>Биржа</Link>
                             <Link className="headerPlatform__nav_item" to={"/category/1"}>Избранные</Link>
                             <Link className="headerPlatform__nav_item" to={"/category/1"}>Заказы</Link>
                             <Link to={"/offers"} className="headerPlatform__nav_item">

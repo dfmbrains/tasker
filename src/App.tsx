@@ -7,7 +7,6 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import HomeAbout from "./Pages/About";
 import Details from "./Pages/Details";
-import Marketplace from "./Pages/Marketplace";
 import LandingLayout from "./Components/LandingLayout";
 import AppLayout from "./Components/AppLayout";
 import Vacancies from "./Pages/Vacancies/Vacancies";
@@ -18,6 +17,8 @@ import ValidateSearchPath from './Utils/ValidateSearchPath';
 import SearchFreelancer from './Pages/SearchFreelancer';
 import ReferralProgram from "./Pages/ReferralProgram";
 import Statistics from "./Pages/Statistics";
+import Categories from "./Pages/Categories";
+import MarketPlace from "./Pages/MarketPlace";
 import Balance from "./Pages/Balance";
 import Tasks from "./Pages/Tasks";
 
@@ -38,7 +39,8 @@ function App() {
                     </Route>
                 </Route>
                 <Route path={"/"} element={<AppLayout/>}>
-                    <Route path={'/category/:category'} element={<Marketplace/>}/>
+                    <Route path={'/category/:category'} element={<Categories/>}/>
+                    <Route path={'/marketplace'} element={<MarketPlace/>}/>
                     <Route path={"/category/:category/:id"} element={<Details type={true}/>}/>
                     <Route path={'/vacancies'} element={<Vacancies/>}/>
                     <Route path={"/vacancies/:id"} element={<Details type={false}/>}/>
