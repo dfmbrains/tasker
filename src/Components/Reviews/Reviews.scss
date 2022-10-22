@@ -1,10 +1,18 @@
-.reviews{
-  &__about{
+.reviews {
+  width: 70%;
+
+  &__about {
     font-family: 'Cera Pro', sans-serif;
     font-weight: 700;
     font-size: 32px;
     text-transform: uppercase;
     color: #555555;
+  }
 
+  &__messageRow {
+    margin-top: 40px;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
   }
 }
