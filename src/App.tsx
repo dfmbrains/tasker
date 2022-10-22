@@ -38,7 +38,7 @@ function App() {
                     <Route path={"/"} element={<SignLayout/>}>
                         <Route path={"/login"} element={<SignIn/>}/>
                         <Route path={"/signup"} element={<SignUp/>}/>
-                    </Route>
+                    </Route>w
                 </Route>
                 <Route path={"/"} element={<AppLayout/>}>
                     <Route path={'/category/:category'} element={<Categories/>}/>

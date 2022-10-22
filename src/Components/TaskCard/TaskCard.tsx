@@ -27,8 +27,8 @@ const TaskCard: React.FC<Interface> = ({idx, type}) => {
                 <div className="TaskCard__down_author">
                     <img src={Djamal} alt=""/>
                     <div className="TaskCard__down_author-about">
-                        <span>Покупатель: <a>obeyArt</a></span>
-                        <span>Размещено проектовна бирже:: <a>2</a></span>
+                        <span>Покупатель: <a href="#">obeyArt</a></span>
+                        <span>Размещено проектовна бирже: <a href="#">2</a></span>
                     </div>
                 </div>
                 {
