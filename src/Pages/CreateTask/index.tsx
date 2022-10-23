@@ -1,9 +1,36 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './createTask.scss';
 import Cost from "../../Components/Cost";
 import Button from "../../Components/Button";
 
 const CreateTask = () => {
+    const portfolioInputRef: any = useRef()
+    const portfolioInputHandler = () => {
+        portfolioInputRef.current.click()
+    }
+
+    //drag and drop
+    const [files, setFiles] = useState<any>()
+    const [drag, setDrag] = useState(false)
+
+    const dragAndDropInputHandler = () => {
+        portfolioInputRef.current.click()
+    }
+    const dragStartHandler = (e: any) => {
+        e.preventDefault()
+        setDrag(true)
+    }
+    const dragLeaveHandler = (e: any) => {
+        e.preventDefault()
+        setDrag(false)
+    }
+    const onDropHandler = (e: any) => {
+        e.preventDefault()
+        let dragFiles = [...e.dataTransfer.files]
+        setFiles(dragFiles)
+        setDrag(false)
+    }
+
     return (
         <main className="createTask">
             <div className="container">
@@ -27,8 +54,14 @@ const CreateTask = () => {
                             </select>
                         </div>
                         <h3>Обложка задания</h3>
-                        <div className="createTask__file">
-                            <h5>Загрузить обложку</h5>
+                        <div
+                            onDragStart={e => dragStartHandler(e)}
+                            onDragLeave={e => dragLeaveHandler(e)}
+                            onDragOver={e => dragStartHandler(e)}
+                            onDrop={e => onDropHandler(e)}
+                            onClick={dragAndDropInputHandler}
+                            className="createTask__file">
+                            <h5>{drag ? "Отпустите, чтобы загрузить" : "Загрузить обложку"}</h5>
                             <p>Минимальный размер: 660 х 440 px Вес: 30 кб — 10 Мб Форматы: jpg, jpeg, png</p>
                         </div>
                     </div>
@@ -39,8 +72,8 @@ const CreateTask = () => {
                         <h3>Какаие материалы вам нужны от клиента</h3>
                         <textarea placeholder="Введите текст"></textarea>
                         <div className="createTask__row">
-                            <input type="file" hidden={true}/>
-                            <button>
+                            <input ref={portfolioInputRef} type="file" hidden={true}/>
+                            <button type={"button"} onClick={portfolioInputHandler}>
                                 <svg width="11" height="20" viewBox="0 0 11 20" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#2B96F1"
