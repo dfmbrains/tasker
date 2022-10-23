@@ -23,6 +23,7 @@ import Balance from "./Pages/Balance";
 import MyTasks from "./Pages/Freelancer/MyTasks";
 import CreateTask from "./Pages/Freelancer/CreateTask";
 import MarketPlaceDetails from "./Pages/MarketPlace/details";
+import UserSettings from "./Pages/Settings";
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                     <Route path={'/balance'} element={<Balance/>}/>
                     <Route path={'/my_tasks'} element={<MyTasks/>}/>
                     <Route path={'/create_task'} element={<CreateTask/>}/>
+                    <Route path={'/settings'} element={<UserSettings/>}/>
                     <Route path={'/search'} element={
                         <ValidateSearchPath>
                             <SearchFreelancer/>
