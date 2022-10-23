@@ -1,5 +1,5 @@
 import React from 'react';
-import MyProfileFreelancer from "../MyProfileFreelancer/MyProfileFreelancer";
+import MyProfileFreelancer from "../Freelancer/MyProfile/MyProfile";
 
 const MyProfile = () => {
 

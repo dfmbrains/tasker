@@ -1,7 +1,7 @@
 import React from 'react';
 import Billy from './img/Billy.png';
 import './HomeBusiness.scss';
-import Button from "../../../../Components/Button";
+import Button from "../../../../../Components/Button";
 
 const HomeBusiness = () => {
     return (

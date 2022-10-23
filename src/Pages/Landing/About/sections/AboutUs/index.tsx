@@ -1,6 +1,6 @@
 import React from 'react';
 import './aboutUs.scss'
-import MetaImg from '../../../../Assets/img/metaImg.png';
+import MetaImg from '../../../../../Assets/img/metaImg.png';
 
 const AboutUs = () => {
     return (

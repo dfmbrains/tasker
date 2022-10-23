@@ -1,12 +1,11 @@
 import React from 'react';
-import './myProfileFreelancer.scss';
-import BaseProfileInfo from "../MyProfile/ProfileBaseInfo/BaseProfileInfo";
-import MyProfileSettings from "../MyProfile/MyProfileSettings/MyProfileSettings";
-import {dataJobs} from "./jobs/dataJobs";
-
-import PortFolioCard from "../../Components/PortFolioCard/PortFolioCard";
-import Reviews from "../../Components/Reviews/Reviews";
-import ShowMoreBtn from "../../Components/ShowMoreButton/ShowMoreBtn";
+import './myProfile.scss'
+import BaseProfileInfo from "../../MyProfile/ProfileBaseInfo/BaseProfileInfo";
+import MyProfileSettings from "../../MyProfile/MyProfileSettings/MyProfileSettings";
+import {dataJobs} from "./imgs/dataJobs";
+import PortFolioCard from "../../../Components/PortFolioCard/PortFolioCard";
+import Reviews from "../../../Components/Reviews/Reviews";
+import ShowMoreBtn from "../../../Components/ShowMoreButton/ShowMoreBtn";
 
 const MyProfileFreelancer = () => {
 
@@ -48,7 +47,7 @@ const MyProfileFreelancer = () => {
                                 <PortFolioCard idx={idx} work={work} key={idx}/>
                             ))}
                         </div>
-                       <ShowMoreBtn/>
+                        <ShowMoreBtn/>
                         <Reviews username={'Erbol'}/>
                     </div>
                 </div>

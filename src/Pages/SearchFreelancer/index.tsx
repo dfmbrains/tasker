@@ -8,7 +8,6 @@ import {useLocation} from "react-router";
 
 const SearchFreelancerTools = () => {
     const location = useLocation()
-    console.log(location)
     return (
         <div className="searchFreelancer__tools">
             <h1 className="pageTitle">Результаты поиска “{location.search.replace("?", '')}”</h1>

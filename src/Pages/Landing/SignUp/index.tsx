@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from "../../Components/Button";
 import {useNavigate} from "react-router";
+import Button from "../../../Components/Button";
 
 const SignUp = () => {
     const navigate = useNavigate();

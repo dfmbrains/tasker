@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './tasks.scss';
-import Button from "../../Components/Button";
-import MyTasksCard from "../../Components/MyTasksCard";
+import Button from "../../../Components/Button";
+import MyTasksCard from "../../../Components/MyTasksCard";
 
 const MyTasks = () => {
     const [nav, setNav] = useState(1)

@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from "../../Components/Button";
 import {Link} from "react-router-dom";
 import {useNavigate} from "react-router";
+import Button from "../../../Components/Button";
 
 const SignIn = () => {
     const navigate = useNavigate();

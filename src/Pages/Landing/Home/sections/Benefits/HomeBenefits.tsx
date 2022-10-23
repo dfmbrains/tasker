@@ -5,7 +5,7 @@ import User from './img/User.png';
 import Statistic from './img/Statistic.png';
 import Bell from './img/Bell.png';
 import Compas from './img/Compas.png';
-import HomeBenefitCard from "../../../../Components/HomeBenefitCard/HomeBenefitCard";
+import HomeBenefitCard from "../../../../../Components/HomeBenefitCard/HomeBenefitCard";
 
 const HomeBenefits = () => {
 

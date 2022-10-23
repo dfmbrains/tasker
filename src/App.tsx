@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 import Footer from "./Shared/Footer/Footer";
 import {Route, Routes, useLocation} from "react-router";
-import Home from "./Pages/Home";
-import SignLayout from "./Components/SignLoyout";
-import SignIn from "./Pages/SignIn";
-import SignUp from "./Pages/SignUp";
-import HomeAbout from "./Pages/About";
-import Details from "./Pages/Details";
 import LandingLayout from "./Components/LandingLayout";
+import Home from "./Pages/Landing/Home";
+import HomeAbout from "./Pages/Landing/About";
+import SignLayout from "./Components/SignLoyout";
+import SignIn from "./Pages/Landing/SignIn";
+import SignUp from "./Pages/Landing/SignUp";
+import Details from "./Pages/Details";
 import AppLayout from "./Components/AppLayout";
 import Vacancies from "./Pages/Vacancies/Vacancies";
 import Offers from "./Pages/Offers";
@@ -20,8 +20,8 @@ import Statistics from "./Pages/Statistics";
 import Categories from "./Pages/Categories";
 import MarketPlace from "./Pages/MarketPlace";
 import Balance from "./Pages/Balance";
-import MyTasks from "./Pages/MyTasks";
-import CreateTask from "./Pages/CreateTask";
+import MyTasks from "./Pages/Freelancer/MyTasks";
+import CreateTask from "./Pages/Freelancer/CreateTask";
 import MarketPlaceDetails from "./Pages/MarketPlace/details";
 
 

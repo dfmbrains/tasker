@@ -1,9 +1,9 @@
 import React from 'react';
 import './homeIntro.scss';
-import Button from "../../../../Components/Button";
-import IntroImg from '../../../../Assets/img/homeIntro.png';
+import Button from "../../../../../Components/Button";
+import IntroImg from '../../../../../Assets/img/homeIntro.png';
 import {useRecoilState} from "recoil";
-import {headerHeightState} from "../../../../Store/States";
+import {headerHeightState} from "../../../../../Store/States";
 
 const HomeIntro = () => {
     const [headerHeight] = useRecoilState(headerHeightState);
