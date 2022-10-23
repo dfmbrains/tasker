@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import SettingsSecond from "./SettingsSecond";
 import ThirdSettings from "./ThirdSettings";
+import SettingsFirst from "./SettingsFirst";
 
-const SettingsFirst = () => {
+const UserSettings = () => {
 
     const [page, setPage] = useState(1)
 
@@ -30,4 +31,4 @@ const SettingsFirst = () => {
     );
 };
 
-export default SettingsFirst;
+export default UserSettings;
