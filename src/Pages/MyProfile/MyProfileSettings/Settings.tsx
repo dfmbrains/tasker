@@ -9,7 +9,7 @@ const Settings: React.FC<Interface> = ({stats}) => {
     return (
         <div className="settingButtons__settings">
             <label>
-                <Link to={'/settings'}>Настройки профиля</Link>
+                <Link to={'/myProfile/settings'}>Настройки профиля</Link>
             </label>
             {stats ?
                 <>

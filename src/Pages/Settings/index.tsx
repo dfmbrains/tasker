@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import SettingsSecond from "./SettingsSecond";
+import './settings.scss';
+import FirstSettings from "./FirstSettings";
+import SecondSettings from "./SecondSettings";
 import ThirdSettings from "./ThirdSettings";
-import SettingsFirst from "./SettingsFirst";
 
 const UserSettings = () => {
 
@@ -10,24 +11,41 @@ const UserSettings = () => {
     const switchSettings = (num: number) => {
         switch (num) {
             case 1:
-                return <SettingsFirst/>
+                return <FirstSettings/>
             case 2:
-                return <SettingsSecond/>
+                return <SecondSettings/>
             case 3:
                 return <ThirdSettings/>
             default:
-                return <SettingsFirst/>
+                return <FirstSettings/>
+        }
+    }
+
+    const activeNav = (num: number) => {
+        switch (num) {
+            case page:
+                return 'active'
+            default:
+                return ''
         }
     }
 
     return (
-        <div className="Settings">
+        <section className="Settings">
             <div className="container">
                 <div className="Settings__main">
-                    {switchSettings(page)}
+                    <h2 className="Settings__main_title">Настройки</h2>
+                    <ul className="Settings__main_navbar">
+                        <li className={`${activeNav(1)}`} onClick={() => setPage(1)}>Общие</li>
+                        <li className={`${activeNav(2)}`} onClick={() => setPage(2)}>Профиль</li>
+                        <li className={`${activeNav(3)}`} onClick={() => setPage(3)}>Финансы</li>
+                    </ul>
+                    <div className="Settings__main_container">
+                        {switchSettings(page)}
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

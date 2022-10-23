@@ -52,12 +52,12 @@ function App() {
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>
                     <Route path={'/myProfile'} element={<MyProfile/>}/>
+                    <Route path={'/myProfile/settings'} element={<UserSettings/>}/>
                     <Route path={'/referral_program'} element={<ReferralProgram/>}/>
                     <Route path={'/statistics'} element={<Statistics/>}/>
                     <Route path={'/balance'} element={<Balance/>}/>
                     <Route path={'/my_tasks'} element={<MyTasks/>}/>
                     <Route path={'/create_task'} element={<CreateTask/>}/>
-                    <Route path={'/settings'} element={<UserSettings/>}/>
                     <Route path={'/search'} element={
                         <ValidateSearchPath>
                             <SearchFreelancer/>
