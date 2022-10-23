@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import {useLocation, useNavigate} from "react-router";
 
 interface IValidateSearchPath {
@@ -8,9 +8,12 @@ interface IValidateSearchPath {
 const ValidateSearchPath: FC<IValidateSearchPath> = ({children}) => {
     const location = useLocation()
     const navigate = useNavigate()
-    if (!location?.search) {
-        navigate(-1)
-    }
+    useEffect(() => {
+        if (!location?.search) {
+            navigate(-1)
+        }
+    }, [])
+    if (!location?.search) return (<></>)
     return (
         <>
             {children}

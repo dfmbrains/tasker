@@ -1,5 +1,4 @@
 import React from 'react';
-import './Categories.scss';
 import dataService from "../../Components/ServiceCard/images/dataService";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import MarketPlaceAside from "../../Components/MarketPlaceAside/MarketPlaceAside";
