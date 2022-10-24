@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 interface Interface {
     stats?: boolean
@@ -8,7 +9,7 @@ const Settings: React.FC<Interface> = ({stats}) => {
     return (
         <div className="settingButtons__settings">
             <label>
-                <button>Настройки профиля</button>
+                <Link to={'/myProfile/settings'}>Настройки профиля</Link>
             </label>
             {stats ?
                 <>

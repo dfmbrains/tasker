@@ -23,6 +23,7 @@ import Balance from "./Pages/Balance";
 import MyTasks from "./Pages/Freelancer/MyTasks";
 import CreateTask from "./Pages/Freelancer/CreateTask";
 import MarketPlaceDetails from "./Pages/MarketPlace/details";
+import UserSettings from "./Pages/Settings";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>
                     <Route path={'/myProfile'} element={<MyProfile/>}/>
+                    <Route path={'/myProfile/settings'} element={<UserSettings/>}/>
                     <Route path={'/referral_program'} element={<ReferralProgram/>}/>
                     <Route path={'/statistics'} element={<Statistics/>}/>
                     <Route path={'/balance'} element={<Balance/>}/>

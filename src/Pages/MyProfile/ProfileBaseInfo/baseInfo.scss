@@ -3,11 +3,13 @@
   flex-direction: column;
   row-gap: 20px;
   padding-bottom: 70px;
-  &__status{
+
+  &__status {
     display: flex;
     align-items: center;
     column-gap: 10px;
-    span{
+
+    span {
       font-family: 'Cera Pro', sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -15,6 +17,7 @@
       color: #555555;
     }
   }
+
   &__data {
     display: flex;
     flex-direction: column;
@@ -46,11 +49,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     font-family: 'Cera Pro', sans-serif;
     font-weight: 700;
     font-size: 120px;
     text-transform: uppercase;
     color: #FFFFFF;
+    position: relative;
+
+    &_change {
+      background: rgba(85, 85, 85, 0.63);
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__avatar:hover {
+    .profileBaseInfo__avatar_change{
+      display: flex;
+      cursor: pointer;
+    }
   }
 }

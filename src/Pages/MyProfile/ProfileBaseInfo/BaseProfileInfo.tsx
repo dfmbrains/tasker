@@ -1,6 +1,7 @@
 import React from 'react';
 import './baseInfo.scss'
 import online from '../../../Assets/icons/onlineIcon.svg';
+import photoChange from '../../../Assets/icons/PhotoChange.svg';
 
 interface userInfo {
     data: {
@@ -17,6 +18,9 @@ const BaseProfileInfo: React.FC<userInfo> = ({data}) => {
         <div className='profileBaseInfo'>
             <div className="profileBaseInfo__avatar">
                 {data.username[0]}
+                <div className="profileBaseInfo__avatar_change">
+                    <img src={photoChange} alt=""/>
+                </div>
             </div>
             <div className="profileBaseInfo__data">
                 <h2 className="profileBaseInfo__data_title">Ваш телефон подтвержден</h2>
