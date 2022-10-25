@@ -15,7 +15,7 @@ const ChatAside = () => {
         <aside className="chatAside">
             <form className="chatAside__search">
                 <input type="text"/>
-                <button>
+                <button>F
                     <img src={searchIcon} alt=""/>
                 </button>
             </form>

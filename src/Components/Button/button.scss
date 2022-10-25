@@ -38,6 +38,25 @@
     border-radius: 72px;
   }
 
+  &__green {
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    background: #49E34F;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+  &__red {
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    background: #FF543E;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
   &__blue {
     border: none;
     padding: 12px 0;

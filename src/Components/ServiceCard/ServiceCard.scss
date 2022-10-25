@@ -55,6 +55,11 @@
     line-height: 120%;
     color: #555555;
   }
+  &__buttons{
+    display: flex;
+    column-gap: 10px;
+    padding: 0 5px 10px 5px;
+  }
 
   &__img {
     width: 100%;
