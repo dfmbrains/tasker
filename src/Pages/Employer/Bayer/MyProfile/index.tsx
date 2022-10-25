@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from "../../../Components/Button";
+import Button from "../../../../Components/Button";
 
-const MyProfileBayer = () => {
+const MyProfileEmployer = () => {
 
     return (
         <>
@@ -22,4 +22,4 @@ const MyProfileBayer = () => {
     );
 };
 
-export default MyProfileBayer;
+export default MyProfileEmployer;
