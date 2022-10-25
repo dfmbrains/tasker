@@ -24,6 +24,7 @@ import MyTasks from "./Pages/Freelancer/MyTasks";
 import CreateTask from "./Pages/Freelancer/CreateTask";
 import MarketPlaceDetails from "./Pages/MarketPlace/details";
 import UserSettings from "./Pages/Settings";
+import VacancyOffers from "./Pages/VacancyOffers";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
                     <Route path={"/category/:category/:id"} element={<Details type={true}/>}/>
                     <Route path={'/vacancies'} element={<Vacancies/>}/>
                     <Route path={"/vacancies/:id"} element={<Details type={false}/>}/>
+                    <Route path={"/vacancyoffers/:id"} element={<VacancyOffers/>}/>
                     <Route path={'/offers'} element={<Offers/>}/>
                     <Route path={'/chat'} element={<Chat/>}/>
                     <Route path={'/chat/:id'} element={<Chat/>}/>

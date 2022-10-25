@@ -1,0 +1,13 @@
+.vacancyOffers{
+  &__main{
+    column-gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    &_row{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      width: calc(80% - 10px);
+    }
+  }
+}

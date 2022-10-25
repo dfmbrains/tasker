@@ -12,20 +12,23 @@ import Date from '../../Assets/icons/DatePublic.png';
 import File from '../../Assets/icons/File.png';
 import Cash from '../../Assets/icons/CashIcon.svg';
 
+import Edit from '../../Assets/icons/edit.svg';
+import Remove from '../../Assets/icons/delete.svg';
+
 interface IVacancyCard {
     offer: boolean,
     status?: boolean | string,
     id?: number,
+    your?: boolean
 
 }
 
-const VacancyCard: FC<IVacancyCard> = ({offer, status, id}) => {
+const VacancyCard: FC<IVacancyCard> = ({offer, status, id, your}) => {
     const navigate = useNavigate()
     const navigateToVacancy = () => {
         navigate('1')
     }
 
-    const your = true;
 
     return (
         <div className={`card vacancyCard ${your ? 'vacancyCardRecruiter' : ''}`}>
@@ -69,13 +72,13 @@ const VacancyCard: FC<IVacancyCard> = ({offer, status, id}) => {
             </div>
             <p className="vacancyCard__text">Разработка и поддержка клиентских front-end приложений...</p>
             <div className="vacancyCard__row vacancyCard__row-sb">
-                <p className="vacancyCard__price">{your ? <img src={Cash}/> : ''} 250 000 ₸</p>
+                <p className="vacancyCard__price">{your ? <img alt={'cash'} src={Cash}/> : ''} 250 000 ₸</p>
                 <div className="vacancyCard__buttonBox">
                     {
                         your ?
                             <>
-                                <Button text={'Редактировать'} type={5}/>
-                                <Button text={'Удалить'} type={8}/>
+                                <Button children={<img src={Edit} alt="editIcon"/>} text={'Редактировать'} type={5}/>
+                                <Button children={<img src={Remove} alt="removeIcon"/>} text={'Удалить'} type={8}/>
                             </>
                             : offer
                                 ? <button onClick={() => navigate(`/chat/${id}`)}
