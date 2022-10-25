@@ -2,7 +2,11 @@ import React from 'react';
 import './cardHeader.scss';
 import CasperLogo from "./img/casperLogo.png";
 
-const CardHeader = () => {
+interface Interface {
+    img?: string;
+}
+
+const CardHeader: React.FC<Interface> = ({img}) => {
     return (
         <div className="cardHeader">
             <img src={CasperLogo} alt="CasperLogo"/>

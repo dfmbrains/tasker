@@ -104,3 +104,52 @@
     }
   }
 }
+
+.vacancyCardRecruiter {
+
+  .vacancyCard__text {
+    padding: 15px 0;
+    margin-bottom: 0;
+    border-top: 1px solid #CCD9EC;
+  }
+
+  .vacancyCard__row-s {
+    column-gap: 10px;
+  }
+
+  .vacancyCard__row-l {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+
+  .vacancyCard__row-sb {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vacancyCard__price {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #CCD9EC;
+    width: 100%;
+    text-align: start;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCD9EC;
+  }
+
+  .vacancyCard__buttonBox {
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    row-gap: 15px;
+
+
+    .button {
+      width: 100%;
+    }
+  }
+}
