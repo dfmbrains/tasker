@@ -1,19 +1,20 @@
 import React from 'react';
 import MyProfileFreelancer from "../Freelancer/MyProfile/MyProfile";
+import MyProfileBayer from "../Bayer/MyProfile";
 
 const MyProfile = () => {
 
     const user = {
         name: 'Erbol',
-        role: 'freelancer',
+        role: 'bayer',
     }
 
-    const RolesType = (role: string)=>{
+    const RolesType = (role: string) => {
         switch (role) {
             case 'freelancer':
                 return <MyProfileFreelancer/>
-            case 'recruiter':
-                return ''
+            case 'bayer':
+                return <MyProfileBayer/>
             default:
                 return ''
         }

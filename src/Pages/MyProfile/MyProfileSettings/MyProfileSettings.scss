@@ -1,38 +1,36 @@
 .settingButtons {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  padding-top: 76px;
   row-gap: 15px;
-
+  width: calc(20% - (40px / 3));
 
   &__settings {
     display: flex;
     flex-direction: column;
-    border: 1px solid #CCD9EC;
+    border-right: 1px solid #CCD9EC;
+    border-left: 1px solid #CCD9EC;
+    border-bottom: 1px solid #CCD9EC;
     border-radius: 8px;
-    row-gap: 15px;
 
     h2 {
       font-weight: 700;
       font-size: 16px;
       text-align: center;
       color: #555555;
+      padding: 15px 0;
+      border-top: 1px solid #CCD9EC;
     }
 
     span {
       text-align: center;
     }
 
-    hr {
-      border: 1px solid #CCD9EC;
-    }
-
     .stats {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 15px;
+      padding: 15px;
+      border-top: 1px solid #CCD9EC;
 
       span:first-child {
         font-weight: 700;
@@ -52,15 +50,18 @@
     }
 
     label {
-      padding: 15px 15px 0 15px;
+      padding: 15px;
       display: flex;
+      border-top: 1px solid #CCD9EC;
 
       a {
         font-weight: 500;
         font-size: 16px;
         color: #FFFFFF;
-
-        padding: 12px 50px;
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        text-align: center;
         border: none;
         background: #3152FF;
         border-radius: 5px;
