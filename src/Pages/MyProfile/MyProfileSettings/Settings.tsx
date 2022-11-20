@@ -23,7 +23,7 @@ const Settings: React.FC<Interface> = ({stats}) => {
                         <span>Отзывов получено</span>
                     </div>
                     <div className="stats">
-                        <span>100%%</span>
+                        <span>100%</span>
                         <span>Заказов успешно сдано</span>
                     </div>
                     <div className="stats">
