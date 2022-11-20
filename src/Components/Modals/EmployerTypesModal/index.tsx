@@ -42,6 +42,10 @@ const EmployerTypesModal: FC<IEmployerTypesModal> = ({closeModal}) => {
                     }
                 </div>
             </div>
+            <div className="employerTypesModal__buttons">
+                <button>Отменить</button>
+                <button>Выбрать</button>
+            </div>
         </div>
     );
 };

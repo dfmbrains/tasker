@@ -75,4 +75,22 @@
       }
     }
   }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5px;
+
+    button {
+      font-family: 'Cera Pro', sans-serif;
+      font-size: 14px;
+      line-height: 120%;
+      color: #FFFFFF;
+      background: #A5ACB8;
+      border-radius: 8px;
+      border: none;
+      padding: 10px 50px;
+    }
+  }
 }
