@@ -30,7 +30,6 @@ const Header = () => {
                         <nav className="header__nav">
                             <Link className="header__nav_link" to={"/"}>С чего начать</Link>
                             <Link className="header__nav_link" to={"/"}>Преимущества</Link>
-                            <Link className="header__nav_link" to={"/"}>Заработок в интернете</Link>
                             <Link className="header__nav_link" to={"/"}>Партнерская программа</Link>
                             <Link className="header__nav_link" to={"/about"}>О нас</Link>
                         </nav>

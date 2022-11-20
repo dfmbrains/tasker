@@ -4,6 +4,7 @@ import Button from "../../../../../Components/Button";
 import IntroImg from '../../../../../Assets/img/homeIntro.png';
 import {useRecoilState} from "recoil";
 import {headerHeightState} from "../../../../../Store/States";
+import {NavLink} from "react-router-dom";
 
 const HomeIntro = () => {
     const [headerHeight] = useRecoilState(headerHeightState);
@@ -18,7 +19,9 @@ const HomeIntro = () => {
                         тысячи заданий с оплатой за деньги
                     </p>
                     <div className="homeIntro__button">
-                        <Button text={"Начать сейчас"} type={3}/>
+                        <NavLink to={'/login'}>
+                            <Button text={"Начать сейчас"} type={3}/>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="homeIntro__img">
