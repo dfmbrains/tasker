@@ -34,6 +34,49 @@
       align-items: center;
       column-gap: 5px;
       cursor: pointer;
+      position: relative;
+
+      svg {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: #3152FF;
+
+        svg {
+          transform: rotate(180deg);
+          transition: 0.3s;
+
+          path {
+            fill: #3152FF;
+          }
+        }
+
+        .headerPlatform__nav_item-modal {
+          display: block;
+        }
+      }
+
+      &-modal {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        padding: 10px 0 0;
+        display: none;
+
+        &-content {
+          background: #FFFFFF;
+          box-shadow: 0 5px 17px -3px rgba(138, 149, 167, 0.35);
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+
+          a {
+            white-space: nowrap;
+          }
+        }
+      }
     }
   }
 
