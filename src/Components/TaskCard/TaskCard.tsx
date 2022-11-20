@@ -10,7 +10,7 @@ interface Interface {
 
 const TaskCard: React.FC<Interface> = ({idx, type}) => {
     return (
-        <div className="TaskCard">
+        <div key={idx} className="TaskCard">
             <div className="TaskCard__up">
                 <h2 className="TaskCard__up_title">Анимационный имиджевый ролик для продукта</h2>
                 <label className="TaskCard__up_sum">
