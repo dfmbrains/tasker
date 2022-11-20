@@ -1,12 +1,43 @@
 .employerTypesModal {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 40%;
+  border: 1px solid;
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #BBCADF;
+    border-radius: 50%;
+  }
+
+  &__search {
+    background: #F1F5FC;
+    border: 1px solid #CCD9EC;
+    border-radius: 5px;
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    color: #555555;
+    padding: 10px 15px;
+    width: 100%;
+  }
 
   &__scroll {
-    height: 500px;
+    padding: 15px 0;
+    margin: 10px 0 30px;
+    height: 400px;
     overflow-y: scroll;
   }
 
