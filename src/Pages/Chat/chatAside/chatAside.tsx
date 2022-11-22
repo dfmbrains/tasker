@@ -6,9 +6,6 @@ import {useNavigate} from "react-router";
 
 const ChatAside = () => {
 
-    const users = dataUsers
-
-
     const navigate = useNavigate();
 
     return (
@@ -21,7 +18,7 @@ const ChatAside = () => {
             </form>
             <div className="chatAside__chats">
                 {
-                    users.map((user, idx) => (
+                    dataUsers.map((user, idx) => (
                         <div key={idx} onClick={() => navigate(`/chat/${idx}`)} className="chatAside__chats_user">
                             <div className="chatAside__chats_user-message">
                                 <div
