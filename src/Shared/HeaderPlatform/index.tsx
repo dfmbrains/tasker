@@ -39,8 +39,8 @@ const HeaderPlatform = () => {
                             <Link className="headerPlatform__nav_item" to={"/marketplace"}>Биржа</Link>
                             <Link className="headerPlatform__nav_item" to={"/category/1"}>Избранные</Link>
                             <Link className="headerPlatform__nav_item" to={"/category/1"}>Заказы</Link>
-                            <Link to={"/offers"} className="headerPlatform__nav_item">
-                                Отклики
+                            <div className="headerPlatform__nav_item">
+                                <span>Отклики</span>
                                 <button className="headerPlatform__more">
                                     <svg width="10" height="8" viewBox="0 0 14 8" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,15 @@ const HeaderPlatform = () => {
                                               fill="#555555"/>
                                     </svg>
                                 </button>
-                            </Link>
+                                <div className="headerPlatform__nav_item-modal">
+                                    <div className="headerPlatform__nav_item-modal-content">
+                                        <Link to={"/offers"} className="headerPlatform__nav_item">Отклики на
+                                            задачи</Link>
+                                        <Link to={"/offers"} className="headerPlatform__nav_item">Отклики на
+                                            вакансии</Link>
+                                    </div>
+                                </div>
+                            </div>
                             <Link className="headerPlatform__nav_item" to={"/chat"}>Чат</Link>
                         </nav>
                         <button className="headerPlatform__notification">
